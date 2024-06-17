@@ -10,3 +10,4 @@ coverage
 .prettierrc
 logo.png
 tsconfig.json
+index.example.*
