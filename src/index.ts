@@ -14,7 +14,7 @@ export { formatOutput } from './output-formatter';
 export { CacheManager } from './cache-manager';
 
 export { Config, DefaultConfig, defaultConfig } from './config';
-export { Instrument, InstrumentType } from './config/instruments';
+export { Instrument, InstrumentType, GroupData, InstrumentGroup } from './config/instruments';
 export { Timeframe, TimeframeType } from './config/timeframes';
 export { Format, FormatType } from './config/format';
 export { Price, PriceType } from './config/price-types';

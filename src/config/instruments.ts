@@ -9,4 +9,4 @@ import instrumentGroup from '../utils/instrument-meta-data/generated/instrument-
 
 const InstrumentGroup = instrumentGroup as GroupData[];
 
-export { InstrumentGroup };
+export { GroupData, InstrumentGroup };
