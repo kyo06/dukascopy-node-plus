@@ -5,7 +5,7 @@ import { MetaDataResponse } from './generate-data.types';
 import { generateIdName } from './generate-id-name';
 const saveFile = promisify(fs.writeFile);
 
-interface GroupData {
+export interface GroupData {
   id: string;
   instruments: string[];
 }
