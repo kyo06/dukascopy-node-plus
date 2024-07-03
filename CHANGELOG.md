@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.39.2](https://github.com/Leo4815162342/dukascopy-node/compare/v1.39.1...v1.39.2) (2024-06-19)
+
+
+### Bug Fixes
+
+* restore metadata ([#182](https://github.com/Leo4815162342/dukascopy-node/issues/182)) ([ca64a92](https://github.com/Leo4815162342/dukascopy-node/commit/ca64a92a5b120896d744ebe481618289ab43ca14))
+
+### [1.39.1](https://github.com/Leo4815162342/dukascopy-node/compare/v1.39.0...v1.39.1) (2024-06-19)
+
+
+### Bug Fixes
+
+* custom decimal factor for some instruments ([#181](https://github.com/Leo4815162342/dukascopy-node/issues/181)) ([67c6903](https://github.com/Leo4815162342/dukascopy-node/commit/67c6903795f9d10b97ac4a43aa75b151fc03b1b0))
+
 ## [1.39.0](https://github.com/Leo4815162342/dukascopy-node/compare/v1.38.0...v1.39.0) (2024-06-03)
 
 
