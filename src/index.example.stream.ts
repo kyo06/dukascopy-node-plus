@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { getHistoricalRatesToStream } from './getHistoricalRatesToStream';
 
 const printMemory = () => {

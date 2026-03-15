@@ -2,7 +2,6 @@
 import path from 'path';
 import fs from 'fs';
 import { promisify } from 'util';
-import fetch from 'node-fetch';
 import { generateInstrumentGroupData } from './generate-group-data';
 import { generateMeta } from './generate-meta';
 import { generateInstrumentEnum } from './generate-instrument-enum';
@@ -11,34 +10,33 @@ const saveFile = promisify(fs.writeFile);
 
 const OUTPUT_FOLDER = path.resolve(__dirname, 'generated');
 
-Promise.all([getActualStartDates(), getRawMetaData()])
-  .then(([actualStartDates, rawMetaData]) => {
-    return Promise.all([
-      saveFile(
-        path.resolve(OUTPUT_FOLDER, `raw-meta-data-${new Date().toISOString().slice(0, 10)}.json`),
-        JSON.stringify(rawMetaData, null, 2)
-      ),
-      generateMeta(
-        rawMetaData.instruments,
-        actualStartDates,
-        path.resolve(OUTPUT_FOLDER, 'instrument-meta-data.json')
-      ),
-      generateInstrumentEnum(
-        rawMetaData.instruments,
-        path.resolve(OUTPUT_FOLDER, 'instrument-enum.ts')
-      ),
-      generateInstrumentGroupData(
-        rawMetaData,
-        path.resolve(OUTPUT_FOLDER, 'instrument-groups.json')
-      )
-    ]);
-  })
-  .then(() => {
-    console.log('Done');
-  });
+async function run() {
+  const [actualStartDates, rawMetaData] = await Promise.all([
+    getActualStartDates(),
+    getRawMetaData()
+  ]);
+  await saveFile(
+    path.resolve(OUTPUT_FOLDER, `raw-meta-data-${new Date().toISOString().slice(0, 10)}.json`),
+    JSON.stringify(rawMetaData, null, 2)
+  );
+
+  const metaDataFilePath = path.resolve(OUTPUT_FOLDER, 'instrument-meta-data.json');
+
+  await generateMeta(rawMetaData.instruments, actualStartDates, metaDataFilePath);
+
+  await generateInstrumentEnum(metaDataFilePath, path.resolve(OUTPUT_FOLDER, 'instrument-enum.ts'));
+
+  await generateInstrumentGroupData(
+    rawMetaData,
+    path.resolve(OUTPUT_FOLDER, 'instrument-groups.json')
+  );
+
+  console.log('Done');
+}
+
+run();
 
 async function getActualStartDates(): Promise<ActualStartDates> {
-  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const rawResponse = await fetch(process.env.START_DATES_URL!);
 
   const startDates = (await rawResponse.json()) as ActualStartDates;

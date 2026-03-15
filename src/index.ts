@@ -13,7 +13,16 @@ export { processData } from './processor';
 export { formatOutput } from './output-formatter';
 export { CacheManager } from './cache-manager';
 
-export { Config, DefaultConfig, defaultConfig } from './config';
+export {
+  Config,
+  ConfigArrayTickItem,
+  ConfigArrayItem,
+  ConfigJsonTickItem,
+  ConfigJsonItem,
+  ConfigCsvItem,
+  DefaultConfig,
+  defaultConfig
+} from './config';
 export { Instrument, InstrumentType, GroupData, InstrumentGroup } from './config/instruments';
 export { Timeframe, TimeframeType } from './config/timeframes';
 export { Format, FormatType } from './config/format';
@@ -29,12 +38,13 @@ export { getHistoricRates, getHistoricalRates } from './getHistoricalRates';
 
 export {
   getCurrentRates,
-  CurrentRatesConfig,
-  CurrentRatesConfigArrayItem,
-  CurrentRatesConfigArrayTickItem,
-  CurrentRatesConfigCsv,
-  CurrentRatesConfigJsonItem,
-  CurrentRatesConfigJsonTickItem
-} from './getCurrentRates';
+  getRealTimeRates,
+  RealTimeRatesConfig,
+  RealTimeRatesConfigArrayItem,
+  RealTimeRatesConfigArrayTickItem,
+  RealTimeRatesConfigCsv,
+  RealTimeRatesConfigJsonItem,
+  RealTimeRatesConfigJsonTickItem
+} from './getRealTimeRates';
 
-export { getHistoricalRatesToStream } from './getHistoricalRatesToStream';
+export { instrumentMetaData } from './config/instruments-metadata';

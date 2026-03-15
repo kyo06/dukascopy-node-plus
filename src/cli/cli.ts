@@ -104,7 +104,7 @@ export async function run(argv: NodeJS.Process['argv']) {
             cutoff = 16;
           }
 
-          return date.toISOString().slice(0, cutoff);
+          return date.toISOString().slice(0, cutoff).replace(/:/g, '-');
         })
         .join('-');
 
@@ -117,33 +117,43 @@ export async function run(argv: NodeJS.Process['argv']) {
       const filePath = resolve(folderPath, fileName);
 
       if (!isDebugActive) {
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
         silent ? printDivider() : printHeader(input, startDate, endDate);
       }
 
       const urls = generateUrls({ instrument, timeframe, priceType, startDate, endDate });
       debug(`${DEBUG_NAMESPACE}:urls`)(`Generated ${urls.length} urls`);
-      debug(`${DEBUG_NAMESPACE}:urls`)(`%O`, urls);
+      debug(`${DEBUG_NAMESPACE}:urls`)('%O', urls);
 
       let step = 0;
 
       if (!isDebugActive) {
         progressBar.start(urls.length, step);
       }
-
       await ensureDir(folderPath);
 
       const fileWriteStream = createWriteStream(filePath, { flags: 'w+' });
 
-      fileWriteStream.on('finish', async () => {
-        const downloadEndTs = Date.now();
-        if (!isDebugActive) {
-          progressBar.stop();
-        }
-        const relativeFilePath = join(dir, fileName);
-        await ensureFile(filePath);
-        const { size } = await stat(filePath);
-        printSuccess(`√ File saved: ${chalk.bold(relativeFilePath)} (${formatBytes(size)})`);
-        printGeneral(`Download time: ${formatTimeDuration(downloadEndTs - downloadStartTs)}`);
+      // Create a promise to track when the stream is fully finished
+      const streamFinishPromise = new Promise<void>((resolve, reject) => {
+        fileWriteStream.on('finish', async () => {
+          try {
+            const downloadEndTs = Date.now();
+            if (!isDebugActive) {
+              progressBar.stop();
+            }
+            const relativeFilePath = join(dir, fileName);
+            await ensureFile(filePath);
+            const { size } = await stat(filePath);
+            printSuccess(`√ File saved: ${chalk.bold(relativeFilePath)} (${formatBytes(size)})`);
+            printGeneral(`Download time: ${formatTimeDuration(downloadEndTs - downloadStartTs)}`);
+            resolve();
+          } catch (error) {
+            reject(error);
+          }
+        });
+
+        fileWriteStream.on('error', reject);
       });
 
       const batchStreamWriter = new BatchStreamWriter({
@@ -219,17 +229,26 @@ export async function run(argv: NodeJS.Process['argv']) {
         }
       });
 
-      await bufferFetcher.fetch_optimized(urls);
+      try {
+        await bufferFetcher.fetch_optimized(urls);
+
+        // Wait for the stream to fully finish before returning
+        await streamFinishPromise;
+      } catch (fetchError) {
+        // If fetch fails, close the stream to prevent hanging finish events
+        fileWriteStream.destroy();
+        throw fetchError;
+      }
     } else {
       printErrors(
         'Search config invalid:',
         validationErrors.map(err => err?.message || '')
       );
-      process.exit(0);
+      process.exit(1);
     }
   } catch (err: unknown) {
     const errorMsg = err instanceof Error ? err.message : JSON.stringify(err);
     printErrors('\nSomething went wrong:', errorMsg);
-    process.exit(0);
+    process.exit(1);
   }
 }

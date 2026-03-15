@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import {
   ConfigArrayItem,
   ConfigArrayTickItem,
@@ -87,7 +86,7 @@ export async function getHistoricalRates(config: Config): Promise<Output> {
   });
 
   debug(`${DEBUG_NAMESPACE}:urls`)(`Generated ${urls.length} urls`);
-  debug(`${DEBUG_NAMESPACE}:urls`)(`%O`, urls);
+  debug(`${DEBUG_NAMESPACE}:urls`)('%O', urls);
 
   const onItemFetch: BufferFetcherInput['onItemFetch'] = process.env.DEBUG
     ? (url, buffer, isCacheHit) => {

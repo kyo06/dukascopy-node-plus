@@ -1,4 +1,3 @@
-import fetch, { Response } from 'node-fetch';
 import { CacheManagerBase } from '../cache-manager';
 import { splitArrayInChunks, wait } from '../utils/general';
 import { BufferFetcherInput, BufferObject } from './types';
@@ -55,7 +54,9 @@ export class BufferFetcher {
         } else {
           buffer = await this.fetchBuffer(url);
         }
-        this.onItemFetch && this.onItemFetch(url, buffer, isCacheHit);
+        if (this.onItemFetch) {
+          this.onItemFetch(url, buffer, isCacheHit);
+        }
 
         return { url, buffer, isCacheHit };
       })
@@ -190,6 +191,8 @@ export class BufferFetcher {
       response = await fetch(url);
     }
 
-    return response.status === 200 ? response.buffer() : Buffer.from('', 'utf8');
+    return response.status === 200
+      ? Buffer.from(await response.arrayBuffer())
+      : Buffer.from('', 'utf8');
   }
 }

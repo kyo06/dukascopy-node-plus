@@ -1,8 +1,8 @@
-/* eslint-disable prettier/prettier */
 import { Config } from './config';
 
 import { validateConfigNode } from './config-validator';
 import { normaliseDates } from './dates-normaliser';
+
 import { generateUrls } from './url-generator';
 import { BufferFetcher } from './buffer-fetcher';
 import { processData } from './processor';
@@ -44,11 +44,11 @@ export function getHistoricalRatesToStream(config: Config): Readable {
       instrument,
       dates: { from, to },
       timeframe,
-      priceType,
-      volumes,
-      volumeUnits,
+      priceType: _priceType,
+      volumes: _volumes,
+      volumeUnits: _volumeUnits,
       utcOffset,
-      ignoreFlats,
+      ignoreFlats: _ignoreFlats,
       format,
       batchSize,
       pauseBetweenBatchesMs,
@@ -117,11 +117,11 @@ export function getHistoricalRatesToStream(config: Config): Readable {
                 ignoreFlats: input.ignoreFlats
               });
               resolve(processedData);
-            } catch (err: any) {
+            } catch (err) {
               reject(err);
             }
           })
-          .catch((err: any) => {
+          .catch(err => {
             reject(err);
           });
       });
@@ -166,8 +166,8 @@ export function getHistoricalRatesToStream(config: Config): Readable {
             }
 
             callback();
-          } catch (err: any) {
-            callback(err);
+          } catch (err) {
+            callback(err as Error);
           }
         }
       })

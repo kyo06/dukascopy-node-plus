@@ -18,6 +18,7 @@ const titleMap: Record<string, { emoji: string; title: string }> = {
   cmd_agricultural: { emoji: '☕', title: 'Agricultural commodities' },
   cmd_energy: { emoji: '⚡', title: 'Energy commodities' },
   cmd_metals: { emoji: '⚙️', title: 'Metals commodities' },
+  etf_cfd: { emoji: '📈', title: 'ETFs' },
   etf_cfd_us: { emoji: '🇺🇸📈', title: 'United States ETFs' },
   etf_cfd_de: { emoji: '🇩🇪📈', title: 'Germany ETFs' },
   etf_cfd_fr: { emoji: '🇫🇷📈', title: 'France ETFs' },
