@@ -36,6 +36,8 @@ export { RuleDate, RuleBoolean, RuleNumber, RuleString, RuleObject } from 'faste
 
 export { getHistoricRates, getHistoricalRates } from './getHistoricalRates';
 
+export { getHistoricalRatesToStream } from './getHistoricalRatesToStream';
+
 export {
   getCurrentRates,
   getRealTimeRates,

@@ -90,7 +90,82 @@ export class CacheManager {
 export type { CacheConfig } from './types';
 ```
 
-### 3. Module avec Factory Pattern
+### 3. Module avec Surcharges TypeScript
+
+Pour les fonctions avec différents types de retour selon les paramètres :
+
+```typescript
+// getHistoricalRates.ts
+import {
+  Config,
+  ConfigArrayItem,
+  ConfigArrayTickItem,
+  ConfigJsonItem,
+  ConfigJsonTickItem,
+  ConfigCsvItem
+} from './config';
+
+// Surcharges pour un typage précis
+export async function getHistoricalRates(config: ConfigArrayItem): Promise<ArrayItem[]>;
+export async function getHistoricalRates(config: ConfigArrayTickItem): Promise<ArrayTickItem[]>;
+export async function getHistoricalRates(config: ConfigJsonItem): Promise<JsonItem[]>;
+export async function getHistoricalRates(config: ConfigJsonTickItem): Promise<JsonItemTick[]>;
+export async function getHistoricalRates(config: ConfigCsvItem): Promise<string>;
+export async function getHistoricalRates(config: Config): Promise<Output>;
+
+// Implémentation
+export async function getHistoricalRates(config: Config): Promise<Output> {
+  // Logique de traitement
+}
+```
+
+### 4. Module avec Streaming
+
+Pour le traitement de grandes quantités de données :
+
+```typescript
+// getHistoricalRatesToStream.ts
+import { Readable } from 'stream';
+import { Config } from './config';
+
+/**
+ * Retourne un stream Node.js pour traiter les données progressivement
+ * Idéal pour les gros datasets (> 10,000 items)
+ */
+export function getHistoricalRatesToStream(config: ConfigArrayItem): Readable;
+export function getHistoricalRatesToStream(config: ConfigJsonItem): Readable;
+export function getHistoricalRatesToStream(config: ConfigCsvItem): Readable;
+export function getHistoricalRatesToStream(config: Config): Readable;
+
+export function getHistoricalRatesToStream(config: Config): Readable {
+  const stream = new Readable({
+    objectMode: true,
+    async read(_size) {}
+  });
+
+  // Fetch et stream des données
+  bufferFetcher
+    .fetch(urls)
+    .then(bufferredData => {
+      const processedData = processData({ ... });
+      
+      // Stream les données
+      processedData.forEach(item => {
+        stream.push(item);
+      });
+      
+      stream.push(null); // Signal de fin
+    })
+    .catch(err => {
+      stream.emit('error', err);
+      stream.push(null);
+    });
+
+  return stream;
+}
+```
+
+### 5. Module avec Factory Pattern
 
 Pour créer des instances configurées :
 

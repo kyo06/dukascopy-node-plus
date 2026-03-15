@@ -1,4 +1,6 @@
 ---
+name: Technology Stack
+description: Build system, tech stack, libraries, frameworks, and common commands
 inclusion: auto
 ---
 

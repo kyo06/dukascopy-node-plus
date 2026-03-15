@@ -1,4 +1,6 @@
 ---
+name: Project Structure
+description: Project organization, folder structure, and module architecture
 inclusion: auto
 ---
 
@@ -39,9 +41,53 @@ The `src/` directory follows a modular architecture with clear separation of con
 ### Entry Points
 
 - **index.ts** - Main library exports
-- **getHistoricalRates.ts** - Historical data API
+- **getHistoricalRates.ts** - Historical data API (Promise-based)
+- **getHistoricalRatesToStream.ts** - Historical data API (Stream-based)
 - **getRealTimeRates.ts** - Real-time data API
 - **cli/index.ts** - CLI entry point
+
+## API Functions
+
+### getHistoricalRates
+Promise-based API for downloading historical data. Returns the complete dataset.
+
+**Use when:**
+- Working with small to medium datasets (< 10,000 items)
+- Need complete dataset in memory
+- Prefer async/await syntax
+
+**Signature:**
+```typescript
+async function getHistoricalRates(config: Config): Promise<Output>
+```
+
+### getHistoricalRatesToStream
+Stream-based API for downloading historical data. Returns a Node.js Readable stream.
+
+**Use when:**
+- Working with large datasets (> 10,000 items)
+- Memory efficiency is important
+- Building data pipelines
+- Writing directly to files
+
+**Signature:**
+```typescript
+function getHistoricalRatesToStream(config: Config): Readable
+```
+
+**Key differences:**
+- Fetches data in batches and streams progressively
+- Lower memory footprint
+- Can pipe to file or other streams
+- Emits 'data', 'end', and 'error' events
+
+### getRealTimeRates
+Promise-based API for fetching the most recent market data.
+
+**Signature:**
+```typescript
+async function getRealTimeRates(config: RealTimeRatesConfig): Promise<Output>
+```
 
 ## Module Pattern
 
