@@ -79,6 +79,48 @@ const { getHistoricalRates } = require('dukascopy-node');
 
 [🛠️ View full Node.js specification](https://www.dukascopy-node.app/config/node)
 
+## ✨ Stream Historical Price Data via Node.js
+
+For large datasets or memory-constrained environments, use the streaming API to process data incrementally:
+
+```javascript
+const { getHistoricalRatesToStream } = require('dukascopy-node');
+
+(async () => {
+  try {
+    const stream = getHistoricalRatesToStream({
+      instrument: 'btcusd',
+      dates: {
+        from: new Date('2022-01-01'),
+        to: new Date('2022-12-31')
+      },
+      timeframe: 'd1',
+      format: 'json'
+    });
+
+    stream.on('data', (chunk) => {
+      console.log('Received chunk:', chunk);
+    });
+
+    stream.on('end', () => {
+      console.log('Stream completed');
+    });
+
+    stream.on('error', (error) => {
+      console.error('Stream error:', error);
+    });
+  } catch (error) {
+    console.log('error', error);
+  }
+})();
+```
+
+**When to use streaming:**
+- Large date ranges (months/years of data)
+- Memory-constrained environments
+- Real-time processing as data arrives
+- Integration with other Node.js streams (file writing, compression, etc.)
+
 ## ✨ Download Real-Time Price Data via Node.js 
 
 ```javascript
