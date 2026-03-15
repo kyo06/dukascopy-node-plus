@@ -8,10 +8,10 @@
 * [Germany ETFs 🇩🇪📈 (1)](#etf_cfd_de)
 * [France ETFs 🇫🇷📈 (3)](#etf_cfd_fr)
 * [Hong Kong ETFs 🇭🇰📈 (4)](#etf_cfd_hk)
-* [United States ETFs 🇺🇸📈 (43)](#etf_cfd_us)
-* [Forex currencies 💱 (54)](#fx_crosses)
+* [United States ETFs 🇺🇸📈 (62)](#etf_cfd_us)
+* [Forex currencies 💱 (293)](#fx_crosses)
 * [Forex major currencies 💶 (7)](#fx_majors)
-* [Forex metals 🥇 (2)](#fx_metals)
+* [Forex metals 🥇 (51)](#fx_metals)
 * [America 🌎 (6)](#idx_america)
 * [Asia 🌏 (6)](#idx_asia)
 * [Europe 🇪🇺 (9)](#idx_europe)
@@ -35,6 +35,7 @@
 * [Switzerland 🇨🇭 (28)](#switzerland)
 * [United Kingdom 🇬🇧 (102)](#uk)
 * [United States 🇺🇸 (608)](#us)
+* [ETFs 📈 (34)](#etf_cfd)
 <hr>
 <h3 id="bnd_cfd">Bonds 📊</h3>
 
@@ -50,34 +51,34 @@
 |[Cardano vs US Dollar](https://www.dukascopy-node.app/instrument/adausd)|`adausd`|Sep 25, 2021|
 |[Aave vs US Dollar](https://www.dukascopy-node.app/instrument/aveusd)|`aveusd`|Sep 15, 2021|
 |[Basic Attention Token vs US Dollar](https://www.dukascopy-node.app/instrument/batusd)|`batusd`|Aug 5, 2019|
-|[Bitcoin Cash vs Swiss Franc](https://www.dukascopy-node.app/instrument/bchchf)|`bchchf`|Mar 14, 2023|
-|[Bitcoin Cash vs Euro](https://www.dukascopy-node.app/instrument/bcheur)|`bcheur`|Mar 14, 2023|
-|[Bitcoin Cash vs Pound Sterling](https://www.dukascopy-node.app/instrument/bchgbp)|`bchgbp`|Mar 14, 2023|
+|[Bitcoin Cash vs. Swiss franc](https://www.dukascopy-node.app/instrument/bchchf)|`bchchf`|Mar 14, 2023|
+|[Bitcoin Cash vs. Euro](https://www.dukascopy-node.app/instrument/bcheur)|`bcheur`|Mar 14, 2023|
+|[Bitcoin Cash vs. Pound sterling](https://www.dukascopy-node.app/instrument/bchgbp)|`bchgbp`|Mar 14, 2023|
 |[Bitcoin Cash vs US dollar](https://www.dukascopy-node.app/instrument/bchusd)|`bchusd`|May 17, 2021|
-|[Bitcoin vs Swiss Frank](https://www.dukascopy-node.app/instrument/btcchf)|`btcchf`|Mar 14, 2023|
-|[Bitcoin vs Euro](https://www.dukascopy-node.app/instrument/btceur)|`btceur`|May 15, 2018|
-|[Bitcoin vs Pound Sterling](https://www.dukascopy-node.app/instrument/btcgbp)|`btcgbp`|Mar 14, 2023|
+|[Bitcoin vs. Swiss franc](https://www.dukascopy-node.app/instrument/btcchf)|`btcchf`|Mar 14, 2023|
+|[Bitcoin vs. Euro](https://www.dukascopy-node.app/instrument/btceur)|`btceur`|May 15, 2018|
+|[Bitcoin vs. Pound sterling](https://www.dukascopy-node.app/instrument/btcgbp)|`btcgbp`|Mar 14, 2023|
 |[Bitcoin vs US Dollar](https://www.dukascopy-node.app/instrument/btcusd)|`btcusd`|May 7, 2017|
 |[Compound vs US Dollar](https://www.dukascopy-node.app/instrument/cmpusd)|`cmpusd`|Sep 25, 2021|
 |[Dashcoin vs US Dollar](https://www.dukascopy-node.app/instrument/dshusd)|`dshusd`|Aug 4, 2019|
 |[Enjin vs US Dollar](https://www.dukascopy-node.app/instrument/enjusd)|`enjusd`|Sep 25, 2021|
 |[EOS vs US Dollar](https://www.dukascopy-node.app/instrument/eosusd)|`eosusd`|Aug 4, 2019|
-|[Ether vs Swiss Franc](https://www.dukascopy-node.app/instrument/ethchf)|`ethchf`|Mar 14, 2023|
-|[Ether vs Euro](https://www.dukascopy-node.app/instrument/etheur)|`etheur`|Mar 14, 2023|
-|[Ether vs Pound Sterling](https://www.dukascopy-node.app/instrument/ethgbp)|`ethgbp`|Mar 14, 2023|
+|[Ethereum vs. Swiss franc](https://www.dukascopy-node.app/instrument/ethchf)|`ethchf`|Mar 14, 2023|
+|[Ethereum vs. Euro](https://www.dukascopy-node.app/instrument/etheur)|`etheur`|Mar 14, 2023|
+|[Ethereum vs. Pound sterling](https://www.dukascopy-node.app/instrument/ethgbp)|`ethgbp`|Mar 14, 2023|
 |[Ether vs US Dollar](https://www.dukascopy-node.app/instrument/ethusd)|`ethusd`|Dec 11, 2017|
 |[Chainlink vs US Dollar](https://www.dukascopy-node.app/instrument/lnkusd)|`lnkusd`|Sep 25, 2021|
-|[Litecoin vs Swiss Franc](https://www.dukascopy-node.app/instrument/ltcchf)|`ltcchf`|Mar 14, 2023|
-|[Litecoin vs Euro](https://www.dukascopy-node.app/instrument/ltceur)|`ltceur`|Mar 14, 2023|
-|[Pound Sterling](https://www.dukascopy-node.app/instrument/ltcgbp)|`ltcgbp`|Mar 14, 2023|
+|[Litecoin vs. Swiss franc](https://www.dukascopy-node.app/instrument/ltcchf)|`ltcchf`|Mar 14, 2023|
+|[Litecoin vs. Euro](https://www.dukascopy-node.app/instrument/ltceur)|`ltceur`|Mar 14, 2023|
+|[Litecoin vs. Pound sterling](https://www.dukascopy-node.app/instrument/ltcgbp)|`ltcgbp`|Mar 14, 2023|
 |[Litecoin vs US Dollar](https://www.dukascopy-node.app/instrument/ltcusd)|`ltcusd`|Sep 3, 2018|
 |[Polygon vs US Dollar](https://www.dukascopy-node.app/instrument/matusd)|`matusd`|Sep 25, 2021|
 |[Maker vs US Dollar](https://www.dukascopy-node.app/instrument/mkrusd)|`mkrusd`|Sep 25, 2021|
 |[TRON vs US Dollar](https://www.dukascopy-node.app/instrument/trxusd)|`trxusd`|Aug 4, 2019|
 |[Uniswap vs US Dollar](https://www.dukascopy-node.app/instrument/uniusd)|`uniusd`|Oct 1, 2021|
-|[Stellar vs Swiss Franc](https://www.dukascopy-node.app/instrument/xlmchf)|`xlmchf`|Mar 14, 2023|
-|[Stellar vs Euro](https://www.dukascopy-node.app/instrument/xlmeur)|`xlmeur`|Mar 14, 2023|
-|[Stellar vs Pound Sterling](https://www.dukascopy-node.app/instrument/xlmgbp)|`xlmgbp`|Mar 14, 2023|
+|[Stellar vs. Swiss franc](https://www.dukascopy-node.app/instrument/xlmchf)|`xlmchf`|Mar 14, 2023|
+|[Stellar vs. Euro](https://www.dukascopy-node.app/instrument/xlmeur)|`xlmeur`|Mar 14, 2023|
+|[Stellar vs. Pound sterling](https://www.dukascopy-node.app/instrument/xlmgbp)|`xlmgbp`|Mar 14, 2023|
 |[Stellar vs US Dollar](https://www.dukascopy-node.app/instrument/xlmusd)|`xlmusd`|May 25, 2021|
 |[Yearn.finance vs US Dollar](https://www.dukascopy-node.app/instrument/yfiusd)|`yfiusd`|Sep 25, 2021|
 <h3 id="cmd_agricultural">Agricultural commodities ☕</h3>
@@ -158,7 +159,7 @@
 |[iShares Silver Trust ETF](https://www.dukascopy-node.app/instrument/slvususd)|`slvususd`|Feb 1, 2018|
 |[SPDR S&P 500 ETF](https://www.dukascopy-node.app/instrument/spyususd)|`spyususd`|Feb 16, 2017|
 |[iShares 20+ Year Treasury Bond ETF](https://www.dukascopy-node.app/instrument/tltususd)|`tltususd`|Jan 26, 2017|
-|[United States Oil](https://www.dukascopy-node.app/instrument/usoususd)|`usoususd`|Jan 26, 2017|
+|[United States Oil Fund](https://www.dukascopy-node.app/instrument/usoususd)|`usoususd`|Jan 26, 2017|
 |[Vanguard FTSE Developed Markets ETF](https://www.dukascopy-node.app/instrument/veaususd)|`veaususd`|Nov 15, 2017|
 |[Vanguard FTSE Europe ETF](https://www.dukascopy-node.app/instrument/vgkususd)|`vgkususd`|Feb 1, 2018|
 |[Vanguard REIT ETF](https://www.dukascopy-node.app/instrument/vnqususd)|`vnqususd`|Nov 15, 2017|
@@ -172,6 +173,25 @@
 |[Health Care Select Sector SPDR Fund](https://www.dukascopy-node.app/instrument/xlvususd)|`xlvususd`|Nov 15, 2017|
 |[Consumer Discretionary Select Sector SPDR Fund](https://www.dukascopy-node.app/instrument/xlyususd)|`xlyususd`|Nov 15, 2017|
 |[SPDR S&P Oil & Gas Explor & Prodtn ETF](https://www.dukascopy-node.app/instrument/xopususd)|`xopususd`|Jan 26, 2017|
+|[ARK Autonomous Technology & Robotics ETF](https://www.dukascopy-node.app/instrument/arkqususd)|`arkqususd`|Mar 19, 2020|
+|[ARK Space Exporation & Innovation ETF](https://www.dukascopy-node.app/instrument/arkxususd)|`arkxususd`|Jan 2, 2024|
+|[Amplify Travel Tech ETF](https://www.dukascopy-node.app/instrument/awayususd)|`awayususd`|Mar 19, 2020|
+|[ProShares Bitcoin ETF](https://www.dukascopy-node.app/instrument/bitoususd)|`bitoususd`|Nov 22, 2022|
+|[Valkyrie Bitcoin and Ether Strategy ETF](https://www.dukascopy-node.app/instrument/btfususd)|`btfususd`|Jun 29, 2022|
+|[VanEck Video Gaming and eSports ETF](https://www.dukascopy-node.app/instrument/espoususd)|`espoususd`|Mar 19, 2020|
+|[Global X FinTech ETF](https://www.dukascopy-node.app/instrument/finxususd)|`finxususd`|Mar 18, 2020|
+|[First Trust Nasdaq Food & Beverage ETF](https://www.dukascopy-node.app/instrument/ftxgususd)|`ftxgususd`|Jan 2, 2024|
+|[iShares US Insurance ETF](https://www.dukascopy-node.app/instrument/iakususd)|`iakususd`|Mar 23, 2020|
+|[iShares US Aerospace & Defense ETF](https://www.dukascopy-node.app/instrument/itaususd)|`itaususd`|Mar 23, 2020|
+|[US Global Jets ETF](https://www.dukascopy-node.app/instrument/jetsususd)|`jetsususd`|May 15, 2020|
+|[SPDR S&P Insurance ETF](https://www.dukascopy-node.app/instrument/kieususd)|`kieususd`|Jan 2, 2020|
+|[SPDR S&P Regional Banking ETF](https://www.dukascopy-node.app/instrument/kreususd)|`kreususd`|Mar 23, 2020|
+|[Invesco Food & Beverage ETF](https://www.dukascopy-node.app/instrument/pbjususd)|`pbjususd`|Mar 20, 2020|
+|[Invesco Leisure & Entertainment ETF](https://www.dukascopy-node.app/instrument/pejususd)|`pejususd`|Mar 18, 2020|
+|[Invesco Aerospace & Defense ETF](https://www.dukascopy-node.app/instrument/ppaususd)|`ppaususd`|Mar 24, 2020|
+|[ROBO Global Robotics & Automation Index ETF](https://www.dukascopy-node.app/instrument/roboususd)|`roboususd`|Oct 3, 2022|
+|[Vanguard Energy ETF](https://www.dukascopy-node.app/instrument/vdeususd)|`vdeususd`|Mar 23, 2020|
+|[Invesco Real Estate S&P US Select Sector UCITS ETF Acc](https://www.dukascopy-node.app/instrument/xresususd)|`xresususd`|Jan 2, 2018|
 <h3 id="fx_crosses">Forex currencies 💱</h3>
 
 |Instrument|id|Earliest data (UTC)|
@@ -230,6 +250,245 @@
 |[US Dollar vs Turkish Lira](https://www.dukascopy-node.app/instrument/usdtry)|`usdtry`|Oct 18, 2001|
 |[US Dollar vs South African Rand](https://www.dukascopy-node.app/instrument/usdzar)|`usdzar`|Nov 25, 1991|
 |[South African Rand vs Japanese Yen](https://www.dukascopy-node.app/instrument/zarjpy)|`zarjpy`|Jun 7, 1999|
+|[United Arab Emirates dirham vs. Renminbi (offshore)](https://www.dukascopy-node.app/instrument/aedcnh)|`aedcnh`|Sep 17, 2024|
+|[United Arab Emirates dirham vs. Czech koruna](https://www.dukascopy-node.app/instrument/aedczk)|`aedczk`|Sep 16, 2024|
+|[United Arab Emirates dirham vs. Hong Kong dollar](https://www.dukascopy-node.app/instrument/aedhkd)|`aedhkd`|Sep 17, 2024|
+|[United Arab Emirates dirham vs. Hungarian forint](https://www.dukascopy-node.app/instrument/aedhuf)|`aedhuf`|Sep 16, 2024|
+|[United Arab Emirates dirham vs. Japanese yen](https://www.dukascopy-node.app/instrument/aedjpy)|`aedjpy`|Sep 16, 2024|
+|[United Arab Emirates dirham vs. Mexican peso](https://www.dukascopy-node.app/instrument/aedmxn)|`aedmxn`|Sep 16, 2024|
+|[United Arab Emirates dirham vs. Romanian leu](https://www.dukascopy-node.app/instrument/aedron)|`aedron`|Sep 16, 2024|
+|[United Arab Emirates dirham vs. Saudi riyal](https://www.dukascopy-node.app/instrument/aedsar)|`aedsar`|Sep 16, 2024|
+|[United Arab Emirates dirham vs. Thai baht](https://www.dukascopy-node.app/instrument/aedthb)|`aedthb`|Sep 16, 2024|
+|[United Arab Emirates dirham vs. Turkish lira](https://www.dukascopy-node.app/instrument/aedtry)|`aedtry`|Sep 16, 2024|
+|[United Arab Emirates dirham vs. South African rand](https://www.dukascopy-node.app/instrument/aedzar)|`aedzar`|Sep 16, 2024|
+|[Australian dollar vs. United Arab Emirates dirham](https://www.dukascopy-node.app/instrument/audaed)|`audaed`|Sep 16, 2024|
+|[Australian dollar vs. Renminbi (offshore)](https://www.dukascopy-node.app/instrument/audcnh)|`audcnh`|Apr 17, 2023|
+|[Australian dollar vs. Czech koruna](https://www.dukascopy-node.app/instrument/audczk)|`audczk`|Dec 19, 2023|
+|[Australian dollar vs. Danish krone](https://www.dukascopy-node.app/instrument/auddkk)|`auddkk`|Dec 19, 2023|
+|[Australian dollar vs. Hong Kong dollar](https://www.dukascopy-node.app/instrument/audhkd)|`audhkd`|Dec 19, 2023|
+|[Australian dollar vs. Hungarian forint](https://www.dukascopy-node.app/instrument/audhuf)|`audhuf`|Apr 23, 2024|
+|[Australian dollar vs. Israeli new shekel](https://www.dukascopy-node.app/instrument/audils)|`audils`|Sep 16, 2024|
+|[Australian dollar vs. Mexican peso](https://www.dukascopy-node.app/instrument/audmxn)|`audmxn`|Dec 19, 2023|
+|[Australian dollar vs. Norwegian krone](https://www.dukascopy-node.app/instrument/audnok)|`audnok`|Dec 19, 2023|
+|[Australian dollar vs. Polish zÅ‚oty](https://www.dukascopy-node.app/instrument/audpln)|`audpln`|Jan 2, 1990|
+|[Australian dollar vs. Romanian leu](https://www.dukascopy-node.app/instrument/audron)|`audron`|Sep 16, 2024|
+|[Australian dollar vs. Saudi riyal](https://www.dukascopy-node.app/instrument/audsar)|`audsar`|Sep 16, 2024|
+|[Australian dollar vs. Swedish krona](https://www.dukascopy-node.app/instrument/audsek)|`audsek`|Dec 19, 2023|
+|[Australian dollar vs. Thai baht](https://www.dukascopy-node.app/instrument/audthb)|`audthb`|Sep 16, 2024|
+|[Australian dollar vs. Turkish lira](https://www.dukascopy-node.app/instrument/audtry)|`audtry`|Dec 19, 2023|
+|[Australian dollar vs. South African rand](https://www.dukascopy-node.app/instrument/audzar)|`audzar`|Apr 24, 2024|
+|[Canadian dollar vs. United Arab Emirates dirham](https://www.dukascopy-node.app/instrument/cadaed)|`cadaed`|Sep 16, 2024|
+|[Canadian dollar vs. Renminbi (offshore)](https://www.dukascopy-node.app/instrument/cadcnh)|`cadcnh`|Sep 16, 2024|
+|[Canadian dollar vs. Czech koruna](https://www.dukascopy-node.app/instrument/cadczk)|`cadczk`|May 15, 2024|
+|[Canadian dollar vs. Danish krone](https://www.dukascopy-node.app/instrument/caddkk)|`caddkk`|May 15, 2024|
+|[Canadian dollar vs. Hungarian forint](https://www.dukascopy-node.app/instrument/cadhuf)|`cadhuf`|May 15, 2024|
+|[Canadian dollar vs. Israeli new shekel](https://www.dukascopy-node.app/instrument/cadils)|`cadils`|Sep 16, 2024|
+|[Canadian dollar vs. Mexican peso](https://www.dukascopy-node.app/instrument/cadmxn)|`cadmxn`|May 15, 2024|
+|[Canadian dollar vs. Norwegian krone](https://www.dukascopy-node.app/instrument/cadnok)|`cadnok`|May 15, 2024|
+|[Canadian dollar vs. Polish zÅ‚oty](https://www.dukascopy-node.app/instrument/cadpln)|`cadpln`|Nov 10, 1999|
+|[Canadian dollar vs. Romanian leu](https://www.dukascopy-node.app/instrument/cadron)|`cadron`|Sep 16, 2024|
+|[Canadian dollar vs. Saudi riyal](https://www.dukascopy-node.app/instrument/cadsar)|`cadsar`|Sep 16, 2024|
+|[Canadian dollar vs. Swedish krona](https://www.dukascopy-node.app/instrument/cadsek)|`cadsek`|May 15, 2024|
+|[Canadian dollar vs. Singapore dollar](https://www.dukascopy-node.app/instrument/cadsgd)|`cadsgd`|May 15, 2024|
+|[Canadian dollar vs. Thai baht](https://www.dukascopy-node.app/instrument/cadthb)|`cadthb`|Sep 16, 2024|
+|[Canadian dollar vs. Turkish lira](https://www.dukascopy-node.app/instrument/cadtry)|`cadtry`|May 15, 2024|
+|[Canadian dollar vs. South African rand](https://www.dukascopy-node.app/instrument/cadzar)|`cadzar`|May 15, 2024|
+|[Swiss franc vs. United Arab Emirates dirham](https://www.dukascopy-node.app/instrument/chfaed)|`chfaed`|Sep 17, 2024|
+|[Swiss franc vs. Renminbi (offshore)](https://www.dukascopy-node.app/instrument/chfcnh)|`chfcnh`|Sep 16, 2024|
+|[Swiss franc vs. Czech koruna](https://www.dukascopy-node.app/instrument/chfczk)|`chfczk`|May 15, 2024|
+|[Swiss franc vs. Danish krone](https://www.dukascopy-node.app/instrument/chfdkk)|`chfdkk`|May 15, 2024|
+|[Swiss franc vs. Hong Kong dollar](https://www.dukascopy-node.app/instrument/chfhkd)|`chfhkd`|May 15, 2024|
+|[Swiss franc vs. Hungarian forint](https://www.dukascopy-node.app/instrument/chfhuf)|`chfhuf`|May 15, 2024|
+|[Swiss franc vs. Israeli new shekel](https://www.dukascopy-node.app/instrument/chfils)|`chfils`|Sep 16, 2024|
+|[Swiss franc vs. Mexican peso](https://www.dukascopy-node.app/instrument/chfmxn)|`chfmxn`|May 15, 2024|
+|[Swiss franc vs. Norwegian krone](https://www.dukascopy-node.app/instrument/chfnok)|`chfnok`|May 15, 2024|
+|[Swiss franc vs. Polish zÅ‚oty](https://www.dukascopy-node.app/instrument/chfpln)|`chfpln`|Oct 4, 2004|
+|[Swiss franc vs. Romanian leu](https://www.dukascopy-node.app/instrument/chfron)|`chfron`|Sep 16, 2024|
+|[Swiss franc vs. Saudi riyal](https://www.dukascopy-node.app/instrument/chfsar)|`chfsar`|Sep 16, 2024|
+|[Swiss franc vs. Swedish krona](https://www.dukascopy-node.app/instrument/chfsek)|`chfsek`|May 15, 2024|
+|[Swiss franc vs. Thai baht](https://www.dukascopy-node.app/instrument/chfthb)|`chfthb`|Sep 16, 2024|
+|[Swiss franc vs. Turkish lira](https://www.dukascopy-node.app/instrument/chftry)|`chftry`|May 15, 2024|
+|[Swiss franc vs. South African rand](https://www.dukascopy-node.app/instrument/chfzar)|`chfzar`|May 15, 2024|
+|[Renminbi (offshore) vs. Czech koruna](https://www.dukascopy-node.app/instrument/cnhczk)|`cnhczk`|Sep 16, 2024|
+|[Renminbi (offshore) vs. Hong Kong dollar](https://www.dukascopy-node.app/instrument/cnhhkd)|`cnhhkd`|Sep 16, 2024|
+|[Renminbi (offshore) vs. Hungarian forint](https://www.dukascopy-node.app/instrument/cnhhuf)|`cnhhuf`|Sep 16, 2024|
+|[Renminbi (offshore) vs. Japanese yen](https://www.dukascopy-node.app/instrument/cnhjpy)|`cnhjpy`|May 15, 2024|
+|[Renminbi (offshore) vs. Mexican peso](https://www.dukascopy-node.app/instrument/cnhmxn)|`cnhmxn`|Sep 16, 2024|
+|[Renminbi (offshore) vs. Thai baht](https://www.dukascopy-node.app/instrument/cnhthb)|`cnhthb`|Sep 16, 2024|
+|[Renminbi (offshore) vs. Turkish lira](https://www.dukascopy-node.app/instrument/cnhtry)|`cnhtry`|Sep 16, 2024|
+|[Renminbi (offshore) vs. South African rand](https://www.dukascopy-node.app/instrument/cnhzar)|`cnhzar`|Sep 16, 2024|
+|[Czech koruna vs. Hungarian forint](https://www.dukascopy-node.app/instrument/czkhuf)|`czkhuf`|May 15, 2024|
+|[Czech koruna vs. Japanese yen](https://www.dukascopy-node.app/instrument/czkjpy)|`czkjpy`|May 15, 2024|
+|[Czech koruna vs. Thai baht](https://www.dukascopy-node.app/instrument/czkthb)|`czkthb`|Sep 16, 2024|
+|[Czech koruna vs. Turkish lira](https://www.dukascopy-node.app/instrument/czktry)|`czktry`|May 15, 2024|
+|[Danish krone vs. United Arab Emirates dirham](https://www.dukascopy-node.app/instrument/dkkaed)|`dkkaed`|Sep 16, 2024|
+|[Danish krone vs. Renminbi (offshore)](https://www.dukascopy-node.app/instrument/dkkcnh)|`dkkcnh`|Sep 16, 2024|
+|[Danish krone vs. Czech koruna](https://www.dukascopy-node.app/instrument/dkkczk)|`dkkczk`|May 15, 2024|
+|[Danish krone vs. Hong Kong dollar](https://www.dukascopy-node.app/instrument/dkkhkd)|`dkkhkd`|May 15, 2024|
+|[Danish krone vs. Hungarian forint](https://www.dukascopy-node.app/instrument/dkkhuf)|`dkkhuf`|May 15, 2024|
+|[Danish krone vs. Israeli new shekel](https://www.dukascopy-node.app/instrument/dkkils)|`dkkils`|Sep 16, 2024|
+|[Danish krone vs. Japanese yen](https://www.dukascopy-node.app/instrument/dkkjpy)|`dkkjpy`|May 15, 2024|
+|[Danish krone vs. Mexican peso](https://www.dukascopy-node.app/instrument/dkkmxn)|`dkkmxn`|May 15, 2024|
+|[Danish krone vs. Romanian leu](https://www.dukascopy-node.app/instrument/dkkron)|`dkkron`|Sep 16, 2024|
+|[Danish krone vs. Saudi riyal](https://www.dukascopy-node.app/instrument/dkksar)|`dkksar`|Sep 16, 2024|
+|[Danish krone vs. Thai baht](https://www.dukascopy-node.app/instrument/dkkthb)|`dkkthb`|Sep 16, 2024|
+|[Danish krone vs. Turkish lira](https://www.dukascopy-node.app/instrument/dkktry)|`dkktry`|May 15, 2024|
+|[Danish krone vs. South African rand](https://www.dukascopy-node.app/instrument/dkkzar)|`dkkzar`|May 15, 2024|
+|[Euro vs. United Arab Emirates dirham](https://www.dukascopy-node.app/instrument/euraed)|`euraed`|Sep 16, 2024|
+|[Euro vs. Renminbi (offshore)](https://www.dukascopy-node.app/instrument/eurcnh)|`eurcnh`|May 15, 2024|
+|[Euro vs. Israeli new shekel](https://www.dukascopy-node.app/instrument/eurils)|`eurils`|Sep 16, 2024|
+|[Euro vs. Mexican peso](https://www.dukascopy-node.app/instrument/eurmxn)|`eurmxn`|Mar 22, 1999|
+|[Euro vs. Romanian leu](https://www.dukascopy-node.app/instrument/eurron)|`eurron`|Sep 16, 2024|
+|[Euro vs. Saudi riyal](https://www.dukascopy-node.app/instrument/eursar)|`eursar`|Sep 16, 2024|
+|[Euro vs. Thai baht](https://www.dukascopy-node.app/instrument/eurthb)|`eurthb`|Sep 16, 2024|
+|[Euro vs. South African rand](https://www.dukascopy-node.app/instrument/eurzar)|`eurzar`|Jun 7, 1999|
+|[Pound sterling vs. United Arab Emirates dirham](https://www.dukascopy-node.app/instrument/gbpaed)|`gbpaed`|Sep 16, 2024|
+|[Pound sterling vs. Renminbi (offshore)](https://www.dukascopy-node.app/instrument/gbpcnh)|`gbpcnh`|May 15, 2024|
+|[Pound sterling vs. Czech koruna](https://www.dukascopy-node.app/instrument/gbpczk)|`gbpczk`|May 15, 2024|
+|[Pound sterling vs. Danish krone](https://www.dukascopy-node.app/instrument/gbpdkk)|`gbpdkk`|May 15, 2024|
+|[Pound sterling vs. Hong Kong dollar](https://www.dukascopy-node.app/instrument/gbphkd)|`gbphkd`|May 15, 2024|
+|[Pound sterling vs. Hungarian forint](https://www.dukascopy-node.app/instrument/gbphuf)|`gbphuf`|May 15, 2024|
+|[Pound sterling vs. Israeli new shekel](https://www.dukascopy-node.app/instrument/gbpils)|`gbpils`|Sep 16, 2024|
+|[Pound sterling vs. Mexican peso](https://www.dukascopy-node.app/instrument/gbpmxn)|`gbpmxn`|May 15, 2024|
+|[Pound sterling vs. Norwegian krone](https://www.dukascopy-node.app/instrument/gbpnok)|`gbpnok`|May 15, 2024|
+|[Pound sterling vs. Polish zÅ‚oty](https://www.dukascopy-node.app/instrument/gbppln)|`gbppln`|May 15, 2024|
+|[Pound sterling vs. Romanian leu](https://www.dukascopy-node.app/instrument/gbpron)|`gbpron`|Sep 16, 2024|
+|[Pound sterling vs. Saudi riyal](https://www.dukascopy-node.app/instrument/gbpsar)|`gbpsar`|Sep 17, 2024|
+|[Pound sterling vs. Swedish krona](https://www.dukascopy-node.app/instrument/gbpsek)|`gbpsek`|May 15, 2024|
+|[Pound sterling vs. Singapore dollar](https://www.dukascopy-node.app/instrument/gbpsgd)|`gbpsgd`|May 15, 2024|
+|[Pound sterling vs. Thai baht](https://www.dukascopy-node.app/instrument/gbpthb)|`gbpthb`|Sep 17, 2024|
+|[Pound sterling vs. Turkish lira](https://www.dukascopy-node.app/instrument/gbptry)|`gbptry`|May 15, 2024|
+|[Pound sterling vs. South African rand](https://www.dukascopy-node.app/instrument/gbpzar)|`gbpzar`|May 15, 2024|
+|[Hong Kong dollar vs. Czech koruna](https://www.dukascopy-node.app/instrument/hkdczk)|`hkdczk`|May 15, 2024|
+|[Hong Kong dollar vs. Hungarian forint](https://www.dukascopy-node.app/instrument/hkdhuf)|`hkdhuf`|May 15, 2024|
+|[Hong Kong dollar vs. Mexican peso](https://www.dukascopy-node.app/instrument/hkdmxn)|`hkdmxn`|May 15, 2024|
+|[Hong Kong dollar vs. Thai baht](https://www.dukascopy-node.app/instrument/hkdthb)|`hkdthb`|Sep 17, 2024|
+|[Hong Kong dollar vs. Turkish lira](https://www.dukascopy-node.app/instrument/hkdtry)|`hkdtry`|May 15, 2024|
+|[Hong Kong dollar vs. South African rand](https://www.dukascopy-node.app/instrument/hkdzar)|`hkdzar`|May 15, 2024|
+|[Israeli new shekel vs. United Arab Emirates dirham](https://www.dukascopy-node.app/instrument/ilsaed)|`ilsaed`|Sep 17, 2024|
+|[Israeli new shekel vs. Renminbi (offshore)](https://www.dukascopy-node.app/instrument/ilscnh)|`ilscnh`|Sep 17, 2024|
+|[Israeli new shekel vs. Czech koruna](https://www.dukascopy-node.app/instrument/ilsczk)|`ilsczk`|Sep 17, 2024|
+|[Israeli new shekel vs. Hong Kong dollar](https://www.dukascopy-node.app/instrument/ilshkd)|`ilshkd`|Sep 17, 2024|
+|[Israeli new shekel vs. Hungarian forint](https://www.dukascopy-node.app/instrument/ilshuf)|`ilshuf`|Sep 17, 2024|
+|[Israeli new shekel vs. Japanese yen](https://www.dukascopy-node.app/instrument/ilsjpy)|`ilsjpy`|Sep 17, 2024|
+|[Israeli new shekel vs. Mexican peso](https://www.dukascopy-node.app/instrument/ilsmxn)|`ilsmxn`|Sep 17, 2024|
+|[Israeli new shekel vs. Romanian leu](https://www.dukascopy-node.app/instrument/ilsron)|`ilsron`|Sep 17, 2024|
+|[Israeli new shekel vs. Saudi riyal](https://www.dukascopy-node.app/instrument/ilssar)|`ilssar`|Sep 17, 2024|
+|[Israeli new shekel vs. Thai baht](https://www.dukascopy-node.app/instrument/ilsthb)|`ilsthb`|Sep 17, 2024|
+|[Israeli new shekel vs. Turkish lira](https://www.dukascopy-node.app/instrument/ilstry)|`ilstry`|Sep 17, 2024|
+|[Israeli new shekel vs. South African rand](https://www.dukascopy-node.app/instrument/ilszar)|`ilszar`|Sep 17, 2024|
+|[Japanese yen vs. Hungarian forint](https://www.dukascopy-node.app/instrument/jpyhuf)|`jpyhuf`|Sep 17, 2024|
+|[Mexican peso vs. Czech koruna](https://www.dukascopy-node.app/instrument/mxnczk)|`mxnczk`|May 15, 2024|
+|[Mexican peso vs. Hungarian forint](https://www.dukascopy-node.app/instrument/mxnhuf)|`mxnhuf`|May 15, 2024|
+|[Mexican peso vs. Japanese yen](https://www.dukascopy-node.app/instrument/mxnjpy)|`mxnjpy`|Jul 23, 1998|
+|[Mexican peso vs. Thai baht](https://www.dukascopy-node.app/instrument/mxnthb)|`mxnthb`|Sep 17, 2024|
+|[Mexican peso vs. Turkish lira](https://www.dukascopy-node.app/instrument/mxntry)|`mxntry`|May 15, 2024|
+|[Norwegian krone vs. United Arab Emirates dirham](https://www.dukascopy-node.app/instrument/nokaed)|`nokaed`|Sep 17, 2024|
+|[Norwegian krone vs. Renminbi (offshore)](https://www.dukascopy-node.app/instrument/nokcnh)|`nokcnh`|Sep 17, 2024|
+|[Norwegian krone vs. Czech koruna](https://www.dukascopy-node.app/instrument/nokczk)|`nokczk`|May 15, 2024|
+|[Norwegian krone vs. Danish krone](https://www.dukascopy-node.app/instrument/nokdkk)|`nokdkk`|May 15, 2024|
+|[Norwegian krone vs. Hong Kong dollar](https://www.dukascopy-node.app/instrument/nokhkd)|`nokhkd`|May 15, 2024|
+|[Norwegian krone vs. Hungarian forint](https://www.dukascopy-node.app/instrument/nokhuf)|`nokhuf`|May 15, 2024|
+|[Norwegian krone vs. Israeli new shekel](https://www.dukascopy-node.app/instrument/nokils)|`nokils`|Sep 17, 2024|
+|[Norwegian krone vs. Japanese yen](https://www.dukascopy-node.app/instrument/nokjpy)|`nokjpy`|May 15, 2024|
+|[Norwegian krone vs. Mexican peso](https://www.dukascopy-node.app/instrument/nokmxn)|`nokmxn`|May 26, 2024|
+|[Norwegian krone vs. Romanian leu](https://www.dukascopy-node.app/instrument/nokron)|`nokron`|Sep 17, 2024|
+|[Norwegian krone vs. Saudi riyal](https://www.dukascopy-node.app/instrument/noksar)|`noksar`|Sep 17, 2024|
+|[Norwegian krone vs. Swedish krona](https://www.dukascopy-node.app/instrument/noksek)|`noksek`|May 15, 2024|
+|[Norwegian krone vs. Thai baht](https://www.dukascopy-node.app/instrument/nokthb)|`nokthb`|Sep 17, 2024|
+|[Norwegian krone vs. Turkish lira](https://www.dukascopy-node.app/instrument/noktry)|`noktry`|May 15, 2024|
+|[Norwegian krone vs. South African rand](https://www.dukascopy-node.app/instrument/nokzar)|`nokzar`|May 15, 2024|
+|[New Zealand dollar vs. United Arab Emirates dirham](https://www.dukascopy-node.app/instrument/nzdaed)|`nzdaed`|Sep 17, 2024|
+|[New Zealand dollar vs. Renminbi (offshore)](https://www.dukascopy-node.app/instrument/nzdcnh)|`nzdcnh`|May 15, 2024|
+|[New Zealand dollar vs. Czech koruna](https://www.dukascopy-node.app/instrument/nzdczk)|`nzdczk`|May 15, 2024|
+|[New Zealand dollar vs. Danish krone](https://www.dukascopy-node.app/instrument/nzddkk)|`nzddkk`|May 15, 2024|
+|[New Zealand dollar vs. Hong Kong dollar](https://www.dukascopy-node.app/instrument/nzdhkd)|`nzdhkd`|May 15, 2024|
+|[New Zealand dollar vs. Hungarian forint](https://www.dukascopy-node.app/instrument/nzdhuf)|`nzdhuf`|May 15, 2024|
+|[New Zealand dollar vs. Israeli new shekel](https://www.dukascopy-node.app/instrument/nzdils)|`nzdils`|Sep 17, 2024|
+|[New Zealand dollar vs. Mexican peso](https://www.dukascopy-node.app/instrument/nzdmxn)|`nzdmxn`|May 15, 2024|
+|[New Zealand dollar vs. Norwegian krone](https://www.dukascopy-node.app/instrument/nzdnok)|`nzdnok`|May 15, 2024|
+|[New Zealand dollar vs. Polish zÅ‚oty](https://www.dukascopy-node.app/instrument/nzdpln)|`nzdpln`|May 4, 2001|
+|[New Zealand dollar vs. Romanian leu](https://www.dukascopy-node.app/instrument/nzdron)|`nzdron`|Sep 17, 2024|
+|[New Zealand dollar vs. Saudi riyal](https://www.dukascopy-node.app/instrument/nzdsar)|`nzdsar`|Sep 17, 2024|
+|[New Zealand dollar vs. Swedish krona](https://www.dukascopy-node.app/instrument/nzdsek)|`nzdsek`|May 15, 2024|
+|[New Zealand dollar vs. Singapore dollar](https://www.dukascopy-node.app/instrument/nzdsgd)|`nzdsgd`|Jun 3, 1999|
+|[New Zealand dollar vs. Thai baht](https://www.dukascopy-node.app/instrument/nzdthb)|`nzdthb`|Sep 17, 2024|
+|[New Zealand dollar vs. Turkish lira](https://www.dukascopy-node.app/instrument/nzdtry)|`nzdtry`|May 15, 2024|
+|[New Zealand dollar vs. South African rand](https://www.dukascopy-node.app/instrument/nzdzar)|`nzdzar`|May 15, 2024|
+|[Polish zÅ‚oty vs. United Arab Emirates dirham](https://www.dukascopy-node.app/instrument/plnaed)|`plnaed`|Sep 17, 2024|
+|[Polish zÅ‚oty vs. Renminbi (offshore)](https://www.dukascopy-node.app/instrument/plncnh)|`plncnh`|Sep 17, 2024|
+|[Polish zÅ‚oty vs. Czech koruna](https://www.dukascopy-node.app/instrument/plnczk)|`plnczk`|May 15, 2024|
+|[Polish zÅ‚oty vs. Danish krone](https://www.dukascopy-node.app/instrument/plndkk)|`plndkk`|Dec 28, 2001|
+|[Polish zÅ‚oty vs. Hong Kong dollar](https://www.dukascopy-node.app/instrument/plnhkd)|`plnhkd`|May 15, 2024|
+|[Polish zÅ‚oty vs. Hungarian forint](https://www.dukascopy-node.app/instrument/plnhuf)|`plnhuf`|May 15, 2024|
+|[Polish zÅ‚oty vs. Israeli new shekel](https://www.dukascopy-node.app/instrument/plnils)|`plnils`|Sep 17, 2024|
+|[Polish zÅ‚oty vs. Japanese yen](https://www.dukascopy-node.app/instrument/plnjpy)|`plnjpy`|May 15, 2024|
+|[Polish zÅ‚oty vs. Mexican peso](https://www.dukascopy-node.app/instrument/plnmxn)|`plnmxn`|May 15, 2024|
+|[Polish zÅ‚oty vs. Norwegian krone](https://www.dukascopy-node.app/instrument/plnnok)|`plnnok`|May 15, 2024|
+|[Polish zÅ‚oty vs. Romanian leu](https://www.dukascopy-node.app/instrument/plnron)|`plnron`|Sep 17, 2024|
+|[Polish zÅ‚oty vs. Saudi riyal](https://www.dukascopy-node.app/instrument/plnsar)|`plnsar`|Sep 17, 2024|
+|[Polish zÅ‚oty vs. Swedish krona](https://www.dukascopy-node.app/instrument/plnsek)|`plnsek`|May 15, 2024|
+|[Polish zÅ‚oty vs. Thai baht](https://www.dukascopy-node.app/instrument/plnthb)|`plnthb`|Sep 17, 2024|
+|[Polish zÅ‚oty vs. Turkish lira](https://www.dukascopy-node.app/instrument/plntry)|`plntry`|May 15, 2024|
+|[Polish zÅ‚oty vs. South African rand](https://www.dukascopy-node.app/instrument/plnzar)|`plnzar`|May 15, 2024|
+|[Romanian leu vs. Renminbi (offshore)](https://www.dukascopy-node.app/instrument/roncnh)|`roncnh`|Sep 17, 2024|
+|[Romanian leu vs. Czech koruna](https://www.dukascopy-node.app/instrument/ronczk)|`ronczk`|Sep 17, 2024|
+|[Romanian leu vs. Hong Kong dollar](https://www.dukascopy-node.app/instrument/ronhkd)|`ronhkd`|Sep 17, 2024|
+|[Romanian leu vs. Hungarian forint](https://www.dukascopy-node.app/instrument/ronhuf)|`ronhuf`|Sep 17, 2024|
+|[Romanian leu vs. Japanese yen](https://www.dukascopy-node.app/instrument/ronjpy)|`ronjpy`|Sep 17, 2024|
+|[Romanian leu vs. Mexican peso](https://www.dukascopy-node.app/instrument/ronmxn)|`ronmxn`|Sep 17, 2024|
+|[Romanian leu vs. Thai baht](https://www.dukascopy-node.app/instrument/ronthb)|`ronthb`|Sep 17, 2024|
+|[Romanian leu vs. Turkish lira](https://www.dukascopy-node.app/instrument/rontry)|`rontry`|Sep 17, 2024|
+|[Romanian leu vs. South African rand](https://www.dukascopy-node.app/instrument/ronzar)|`ronzar`|Sep 17, 2024|
+|[Saudi riyal vs. Renminbi (offshore)](https://www.dukascopy-node.app/instrument/sarcnh)|`sarcnh`|Sep 17, 2024|
+|[Saudi riyal vs. Czech koruna](https://www.dukascopy-node.app/instrument/sarczk)|`sarczk`|Sep 17, 2024|
+|[Saudi riyal vs. Hong Kong dollar](https://www.dukascopy-node.app/instrument/sarhkd)|`sarhkd`|Sep 17, 2024|
+|[Saudi riyal vs. Hungarian forint](https://www.dukascopy-node.app/instrument/sarhuf)|`sarhuf`|Sep 17, 2024|
+|[Saudi riyal vs. Japanese yen](https://www.dukascopy-node.app/instrument/sarjpy)|`sarjpy`|Sep 17, 2024|
+|[Saudi riyal vs. Mexican peso](https://www.dukascopy-node.app/instrument/sarmxn)|`sarmxn`|Sep 17, 2024|
+|[Saudi riyal vs. Romanian leu](https://www.dukascopy-node.app/instrument/sarron)|`sarron`|Sep 17, 2024|
+|[Saudi riyal vs. Thai baht](https://www.dukascopy-node.app/instrument/sarthb)|`sarthb`|Sep 17, 2024|
+|[Saudi riyal vs. Turkish lira](https://www.dukascopy-node.app/instrument/sartry)|`sartry`|Sep 17, 2024|
+|[Saudi riyal vs. South African rand](https://www.dukascopy-node.app/instrument/sarzar)|`sarzar`|Sep 17, 2024|
+|[Swedish krona vs. United Arab Emirates dirham](https://www.dukascopy-node.app/instrument/sekaed)|`sekaed`|Sep 17, 2024|
+|[Swedish krona vs. Renminbi (offshore)](https://www.dukascopy-node.app/instrument/sekcnh)|`sekcnh`|Sep 17, 2024|
+|[Swedish krona vs. Czech koruna](https://www.dukascopy-node.app/instrument/sekczk)|`sekczk`|May 15, 2024|
+|[Swedish krona vs. Danish krone](https://www.dukascopy-node.app/instrument/sekdkk)|`sekdkk`|May 15, 2024|
+|[Swedish krona vs. Hong Kong dollar](https://www.dukascopy-node.app/instrument/sekhkd)|`sekhkd`|May 15, 2024|
+|[Swedish krona vs. Hungarian forint](https://www.dukascopy-node.app/instrument/sekhuf)|`sekhuf`|May 15, 2024|
+|[Swedish krona vs. Israeli new shekel](https://www.dukascopy-node.app/instrument/sekils)|`sekils`|Sep 17, 2024|
+|[Swedish krona vs. Japanese yen](https://www.dukascopy-node.app/instrument/sekjpy)|`sekjpy`|May 15, 2024|
+|[Swedish krona vs. Mexican peso](https://www.dukascopy-node.app/instrument/sekmxn)|`sekmxn`|May 15, 2024|
+|[Swedish krona vs. Romanian leu](https://www.dukascopy-node.app/instrument/sekron)|`sekron`|Sep 17, 2024|
+|[Swedish krona vs. Saudi riyal](https://www.dukascopy-node.app/instrument/seksar)|`seksar`|Sep 17, 2024|
+|[Swedish krona vs. Thai baht](https://www.dukascopy-node.app/instrument/sekthb)|`sekthb`|Sep 17, 2024|
+|[Swedish krona vs. Turkish lira](https://www.dukascopy-node.app/instrument/sektry)|`sektry`|May 15, 2024|
+|[Swedish krona vs. South African rand](https://www.dukascopy-node.app/instrument/sekzar)|`sekzar`|May 15, 2024|
+|[Singapore dollar vs. United Arab Emirates dirham](https://www.dukascopy-node.app/instrument/sgdaed)|`sgdaed`|Sep 17, 2024|
+|[Singapore dollar vs. Renminbi (offshore)](https://www.dukascopy-node.app/instrument/sgdcnh)|`sgdcnh`|Sep 17, 2024|
+|[Singapore dollar vs. Czech koruna](https://www.dukascopy-node.app/instrument/sgdczk)|`sgdczk`|May 15, 2024|
+|[Singapore dollar vs. Danish krone](https://www.dukascopy-node.app/instrument/sgddkk)|`sgddkk`|May 15, 2024|
+|[Singapore dollar vs. Hong Kong dollar](https://www.dukascopy-node.app/instrument/sgdhkd)|`sgdhkd`|May 15, 2024|
+|[Singapore dollar vs. Hungarian forint](https://www.dukascopy-node.app/instrument/sgdhuf)|`sgdhuf`|May 15, 2024|
+|[Singapore dollar vs. Israeli new shekel](https://www.dukascopy-node.app/instrument/sgdils)|`sgdils`|Sep 17, 2024|
+|[Singapore dollar vs. Mexican peso](https://www.dukascopy-node.app/instrument/sgdmxn)|`sgdmxn`|May 15, 2024|
+|[Singapore dollar vs. Norwegian krone](https://www.dukascopy-node.app/instrument/sgdnok)|`sgdnok`|May 15, 2024|
+|[Singapore dollar vs. Polish zÅ‚oty](https://www.dukascopy-node.app/instrument/sgdpln)|`sgdpln`|May 15, 2024|
+|[Singapore dollar vs. Romanian leu](https://www.dukascopy-node.app/instrument/sgdron)|`sgdron`|Sep 17, 2024|
+|[Singapore dollar vs. Saudi riyal](https://www.dukascopy-node.app/instrument/sgdsar)|`sgdsar`|Sep 17, 2024|
+|[Singapore dollar vs. Swedish krona](https://www.dukascopy-node.app/instrument/sgdsek)|`sgdsek`|May 15, 2024|
+|[Singapore dollar vs. Thai baht](https://www.dukascopy-node.app/instrument/sgdthb)|`sgdthb`|Sep 17, 2024|
+|[Singapore dollar vs. Turkish lira](https://www.dukascopy-node.app/instrument/sgdtry)|`sgdtry`|May 15, 2024|
+|[Singapore dollar vs. South African rand](https://www.dukascopy-node.app/instrument/sgdzar)|`sgdzar`|May 15, 2024|
+|[Thai baht vs. Hungarian forint](https://www.dukascopy-node.app/instrument/thbhuf)|`thbhuf`|Sep 17, 2024|
+|[Thai baht vs. Japanese yen](https://www.dukascopy-node.app/instrument/thbjpy)|`thbjpy`|Sep 17, 2024|
+|[Turkish lira vs. Hungarian forint](https://www.dukascopy-node.app/instrument/tryhuf)|`tryhuf`|May 15, 2024|
+|[Turkish lira vs. Thai baht](https://www.dukascopy-node.app/instrument/trythb)|`trythb`|Sep 16, 2024|
+|[South African rand vs. Czech koruna](https://www.dukascopy-node.app/instrument/zarczk)|`zarczk`|May 15, 2024|
+|[South African rand vs. Hungarian forint](https://www.dukascopy-node.app/instrument/zarhuf)|`zarhuf`|May 15, 2024|
+|[South African rand vs. Mexican peso](https://www.dukascopy-node.app/instrument/zarmxn)|`zarmxn`|May 15, 2024|
+|[South African rand vs. Thai baht](https://www.dukascopy-node.app/instrument/zarthb)|`zarthb`|Sep 17, 2024|
+|[South African rand vs. Turkish lira](https://www.dukascopy-node.app/instrument/zartry)|`zartry`|May 15, 2024|
 <h3 id="fx_majors">Forex major currencies 💶</h3>
 
 |Instrument|id|Earliest data (UTC)|
@@ -247,6 +506,55 @@
 |-|-|-|
 |[Spot silver](https://www.dukascopy-node.app/instrument/xagusd)|`xagusd`|Jun 3, 1999|
 |[Spot gold](https://www.dukascopy-node.app/instrument/xauusd)|`xauusd`|Jun 3, 1999|
+|[Silver (troy oz) vs. United Arab Emirates dirham](https://www.dukascopy-node.app/instrument/xagaed)|`xagaed`|Sep 17, 2024|
+|[Silver (troy oz) vs. Australian dollar](https://www.dukascopy-node.app/instrument/xagaud)|`xagaud`|Sep 19, 2011|
+|[Silver (troy oz) vs. Canadian dollar](https://www.dukascopy-node.app/instrument/xagcad)|`xagcad`|May 15, 2024|
+|[Silver (troy oz) vs. Swiss franc](https://www.dukascopy-node.app/instrument/xagchf)|`xagchf`|Mar 14, 2023|
+|[Silver (troy oz) vs. Renminbi (offshore)](https://www.dukascopy-node.app/instrument/xagcnh)|`xagcnh`|Sep 17, 2024|
+|[Silver (troy oz) vs. Czech koruna](https://www.dukascopy-node.app/instrument/xagczk)|`xagczk`|May 15, 2024|
+|[Silver (troy oz) vs. Danish krone](https://www.dukascopy-node.app/instrument/xagdkk)|`xagdkk`|Sep 19, 2011|
+|[Silver (troy oz) vs. Euro](https://www.dukascopy-node.app/instrument/xageur)|`xageur`|Jan 2, 1985|
+|[Silver (troy oz) vs. Pound sterling](https://www.dukascopy-node.app/instrument/xaggbp)|`xaggbp`|Oct 1, 1986|
+|[Silver (troy oz) vs. Hong Kong dollar](https://www.dukascopy-node.app/instrument/xaghkd)|`xaghkd`|Jan 2, 1990|
+|[Silver (troy oz) vs. Hungarian forint](https://www.dukascopy-node.app/instrument/xaghuf)|`xaghuf`|May 15, 2024|
+|[Silver (troy oz) vs. Israeli new shekel](https://www.dukascopy-node.app/instrument/xagils)|`xagils`|Sep 17, 2024|
+|[Silver (troy oz) vs. Japanese yen](https://www.dukascopy-node.app/instrument/xagjpy)|`xagjpy`|Sep 17, 2024|
+|[Silver (troy oz) vs. Mexican peso](https://www.dukascopy-node.app/instrument/xagmxn)|`xagmxn`|Nov 7, 1990|
+|[Silver (troy oz) vs. Norwegian krone](https://www.dukascopy-node.app/instrument/xagnok)|`xagnok`|May 15, 2024|
+|[Silver (troy oz) vs. New Zealand dollar](https://www.dukascopy-node.app/instrument/xagnzd)|`xagnzd`|Jan 9, 2003|
+|[Silver (troy oz) vs. Polish zÅ‚oty](https://www.dukascopy-node.app/instrument/xagpln)|`xagpln`|May 15, 2024|
+|[Silver (troy oz) vs. Romanian leu](https://www.dukascopy-node.app/instrument/xagron)|`xagron`|Sep 17, 2024|
+|[Silver (troy oz) vs. Saudi riyal](https://www.dukascopy-node.app/instrument/xagsar)|`xagsar`|Sep 17, 2024|
+|[Silver (troy oz) vs. Swedish krona](https://www.dukascopy-node.app/instrument/xagsek)|`xagsek`|Apr 1, 1977|
+|[Silver (troy oz) vs. Singapore dollar](https://www.dukascopy-node.app/instrument/xagsgd)|`xagsgd`|Jan 2, 1980|
+|[Silver (troy oz) vs. Thai baht](https://www.dukascopy-node.app/instrument/xagthb)|`xagthb`|Sep 17, 2024|
+|[Silver (troy oz) vs. Turkish lira](https://www.dukascopy-node.app/instrument/xagtry)|`xagtry`|Dec 31, 1987|
+|[Silver(troy oz) vs. South African rand](https://www.dukascopy-node.app/instrument/xagzar)|`xagzar`|Sep 17, 2024|
+|[Gold (troy oz) vs. United Arab Emirates dirham](https://www.dukascopy-node.app/instrument/xauaed)|`xauaed`|Sep 17, 2024|
+|[Gold (troy oz) vs. Australian dollar](https://www.dukascopy-node.app/instrument/xauaud)|`xauaud`|May 15, 2024|
+|[Gold (troy oz) vs. Canadian dollar](https://www.dukascopy-node.app/instrument/xaucad)|`xaucad`|May 15, 2024|
+|[Gold (troy oz) vs. Swiss franc](https://www.dukascopy-node.app/instrument/xauchf)|`xauchf`|Mar 14, 2023|
+|[Gold (troy oz) vs. Renminbi (offshore)](https://www.dukascopy-node.app/instrument/xaucnh)|`xaucnh`|Sep 17, 2024|
+|[Gold (troy oz) vs. Czech koruna](https://www.dukascopy-node.app/instrument/xauczk)|`xauczk`|May 15, 2024|
+|[Gold (troy oz) vs. Danish krone](https://www.dukascopy-node.app/instrument/xaudkk)|`xaudkk`|May 15, 2024|
+|[Gold (troy oz) vs. Euro](https://www.dukascopy-node.app/instrument/xaueur)|`xaueur`|Mar 14, 2023|
+|[Gold (troy oz) vs. Pound sterling](https://www.dukascopy-node.app/instrument/xaugbp)|`xaugbp`|Mar 14, 2023|
+|[Gold (troy oz) vs. Hong Kong dollar](https://www.dukascopy-node.app/instrument/xauhkd)|`xauhkd`|May 15, 2024|
+|[Gold (troy oz) vs. Hungarian forint](https://www.dukascopy-node.app/instrument/xauhuf)|`xauhuf`|May 15, 2024|
+|[Gold (troy oz) vs. Israeli new shekel](https://www.dukascopy-node.app/instrument/xauils)|`xauils`|Sep 17, 2024|
+|[Gold (troy oz) vs. Japanese yen](https://www.dukascopy-node.app/instrument/xaujpy)|`xaujpy`|Sep 17, 2024|
+|[Gold (troy oz) vs. Mexican peso](https://www.dukascopy-node.app/instrument/xaumxn)|`xaumxn`|May 15, 2024|
+|[Gold (troy oz) vs. Norwegian krone](https://www.dukascopy-node.app/instrument/xaunok)|`xaunok`|May 15, 2024|
+|[Gold (troy oz) vs. New Zealand dollar](https://www.dukascopy-node.app/instrument/xaunzd)|`xaunzd`|May 15, 2024|
+|[Gold (troy oz) vs. Polish zÅ‚oty](https://www.dukascopy-node.app/instrument/xaupln)|`xaupln`|May 15, 2024|
+|[Gold (troy oz) vs. Romanian leu](https://www.dukascopy-node.app/instrument/xauron)|`xauron`|Sep 17, 2024|
+|[Gold (troy oz) vs. Saudi riyal](https://www.dukascopy-node.app/instrument/xausar)|`xausar`|Sep 17, 2024|
+|[Gold (troy oz) vs. Swedish krona](https://www.dukascopy-node.app/instrument/xausek)|`xausek`|May 15, 2024|
+|[Gold (troy oz) vs. Singapore dollar](https://www.dukascopy-node.app/instrument/xausgd)|`xausgd`|May 15, 2024|
+|[Gold (troy oz) vs. Thai baht](https://www.dukascopy-node.app/instrument/xauthb)|`xauthb`|Sep 17, 2024|
+|[Gold (troy oz) vs. Turkish lira](https://www.dukascopy-node.app/instrument/xautry)|`xautry`|May 15, 2024|
+|[Gold (troy oz) vs. Silver (troy oz)](https://www.dukascopy-node.app/instrument/xauxag)|`xauxag`|Sep 17, 2024|
+|[Gold (troy oz) vs. South African rand](https://www.dukascopy-node.app/instrument/xauzar)|`xauzar`|Sep 17, 2024|
 <h3 id="idx_america">America 🌎</h3>
 
 |Instrument|id|Earliest data (UTC)|
@@ -277,7 +585,7 @@
 |[UK 100 Index](https://www.dukascopy-node.app/instrument/gbridxgbp)|`gbridxgbp`|Apr 5, 1988|
 |[Spain 35 Index](https://www.dukascopy-node.app/instrument/espidxeur)|`espidxeur`|Jun 2, 2014|
 |[Switzerland 20 Index](https://www.dukascopy-node.app/instrument/cheidxchf)|`cheidxchf`|Jan 3, 1992|
-|[Italy 40 Index](https://www.dukascopy-node.app/instrument/itaidxeur)|`itaidxeur`|Jun 2, 2014|
+|[Italy 40 Index](https://www.dukascopy-node.app/instrument/itaidxeur)|`itaidxeur`|Jul 29, 2016|
 |[Netherlands 25 Index](https://www.dukascopy-node.app/instrument/nldidxeur)|`nldidxeur`|Dec 1, 2017|
 |[Poland 20 Index](https://www.dukascopy-node.app/instrument/plnidxpln)|`plnidxpln`|Dec 1, 2017|
 <h3 id="idx_africa">Africa 🌍</h3>
@@ -1442,3 +1750,41 @@
 |[Zoom Video Communications (A Class)](https://www.dukascopy-node.app/instrument/zmususd)|`zmususd`|Sep 30, 2020|
 |[ZSCALER INC](https://www.dukascopy-node.app/instrument/zsususd)|`zsususd`|May 13, 2022|
 |[ZOETIS INC](https://www.dukascopy-node.app/instrument/ztsususd)|`ztsususd`|May 16, 2022|
+<h3 id="etf_cfd">ETFs 📈</h3>
+
+|Instrument|id|Earliest data (UTC)|
+|-|-|-|
+|[ARK 21Shares Active Bitcoin Ethereum Strategy ETF Fund](https://www.dukascopy-node.app/instrument/arkiususd)|`arkiususd`|Apr 25, 2024|
+|[Global X Cybersecurity UCITS ETF Fund](https://www.dukascopy-node.app/instrument/bugggbgbx)|`bugggbgbx`|Oct 21, 2024|
+|[Lyxor Smart Overnight Return - UCITS ETF C-GBP](https://www.dukascopy-node.app/instrument/csh2gbgbx)|`csh2gbgbx`|Mar 1, 2023|
+|[WisdomTree Cybersecurity UCITS ETF Fund](https://www.dukascopy-node.app/instrument/cysegbgbx)|`cysegbgbx`|Feb 1, 2021|
+|[iShares MSCI Europe Health Care Sector UCITS ETF Fund](https://www.dukascopy-node.app/instrument/esihgbgbx)|`esihgbgbx`|Oct 24, 2024|
+|[iShares Physical Gold ETC Fund](https://www.dukascopy-node.app/instrument/iglnususd)|`iglnususd`|Jan 22, 2020|
+|[iShares S&P 500 Financials Sector UCITS ETF](https://www.dukascopy-node.app/instrument/iufsususd)|`iufsususd`|Mar 20, 2020|
+|[iShares MSCI Global Semiconductors UCITS ETF](https://www.dukascopy-node.app/instrument/semigbgbx)|`semigbgbx`|Oct 21, 2024|
+|[Invesco Physical Gold ETC Fund](https://www.dukascopy-node.app/instrument/sgldususd)|`sgldususd`|Mar 20, 2020|
+|[VanEck Semiconductor ETF Fund](https://www.dukascopy-node.app/instrument/smhususd)|`smhususd`|Dec 9, 2020|
+|[Lyxor Smart Overnight Return - UCITS ETF C-USD](https://www.dukascopy-node.app/instrument/smtcususd)|`smtcususd`|Jan 4, 2023|
+|[Wisdomtree Artificial Intelligence And Innovation Fund](https://www.dukascopy-node.app/instrument/wtaiususd)|`wtaiususd`|Mar 18, 2020|
+|[Xtrackers FTSE Developed Europe Real Estate UCITS ETF](https://www.dukascopy-node.app/instrument/xdergbgbx)|`xdergbgbx`|Jan 4, 2016|
+|[Xtrackers MSCI World Health Care UCITS ETF Fund](https://www.dukascopy-node.app/instrument/xdwhususd)|`xdwhususd`|Mar 20, 2020|
+|[Xtrackers MSCI World Information Technology UCITS ETF](https://www.dukascopy-node.app/instrument/xdwtususd)|`xdwtususd`|Mar 24, 2020|
+|[Invesco Real Estate S&P US Select Sector UCITS ETF Acc](https://www.dukascopy-node.app/instrument/xresususd)|`xresususd`|Jan 2, 2018|
+|[Lyxor Smart Overnight Return - UCITS ETF C-EUR](https://www.dukascopy-node.app/instrument/csh2freur)|`csh2freur`|Jan 2, 2023|
+|[iShares Ageing Population UCITS ETF USD (Acc)](https://www.dukascopy-node.app/instrument/agesgbgbx)|`agesgbgbx`|Mar 20, 2020|
+|[L&G Artificial Intelligence UCITS ETF](https://www.dukascopy-node.app/instrument/aiaigbusd)|`aiaigbusd`|Feb 28, 2020|
+|[iShares NASDAQ 100 UCITS ETF USD (Acc)](https://www.dukascopy-node.app/instrument/cndxgbusd)|`cndxgbusd`|Feb 28, 2020|
+|[VanEck Defense ETF A USD Acc (GBP)](https://www.dukascopy-node.app/instrument/dfnggbgbp)|`dfnggbgbp`|Apr 11, 2023|
+|[iShares Electric Vehicles and Driving Technology UCITS ETF USD (Acc)](https://www.dukascopy-node.app/instrument/ecargbusd)|`ecargbusd`|Mar 25, 2020|
+|[L&G Clean Water UCITS ETF](https://www.dukascopy-node.app/instrument/glgggbgbx)|`glgggbgbx`|Mar 3, 2020|
+|[WisdomTree Artificial Intelligence UCITS ETF - USD Acc](https://www.dukascopy-node.app/instrument/intlgbgbx)|`intlgbgbx`|Jan 2, 2020|
+|[L&G Cyber Security UCITS ETF](https://www.dukascopy-node.app/instrument/ispygbgbx)|`ispygbgbx`|Feb 28, 2020|
+|[iShares MSCI USA SRI UCITS ETF](https://www.dukascopy-node.app/instrument/suasgbusd)|`suasgbusd`|Feb 28, 2020|
+|[iShares MSCI EM SRI UCITS ETF USD (Acc)](https://www.dukascopy-node.app/instrument/susmgbusd)|`susmgbusd`|Feb 28, 2020|
+|[iShares MSCI USA SRI UCITS ETF USD (Acc)](https://www.dukascopy-node.app/instrument/suusgbgbx)|`suusgbgbx`|Feb 28, 2020|
+|[SPDR S&P U.S. Utilities Select Sector UCITS ETF](https://www.dukascopy-node.app/instrument/sxlugbusd)|`sxlugbusd`|Jan 2, 2020|
+|[Vanguard FTSE 100 UCITS ETF GBP Acc](https://www.dukascopy-node.app/instrument/vukggbgbp)|`vukggbgbp`|Feb 28, 2020|
+|[VWRP VANGUARD FTSE ALL-WORLD UCITS ETF](https://www.dukascopy-node.app/instrument/vwrpgbgbp)|`vwrpgbgbp`|Feb 28, 2020|
+|[iShares MSCI World Small Cap UCITS ETF USD (Acc)](https://www.dukascopy-node.app/instrument/wsmlgbusd)|`wsmlgbusd`|Feb 28, 2020|
+|[Xtrackers NASDAQ 100 UCITS ETF 1C (GBP)](https://www.dukascopy-node.app/instrument/xnaqgbgbp)|`xnaqgbgbp`|Feb 16, 2021|
+|[Xtrackers MSCI Europe Utilities Screened UCITS ETF 1C](https://www.dukascopy-node.app/instrument/xs6rgbgbx)|`xs6rgbgbx`|Feb 3, 2020|

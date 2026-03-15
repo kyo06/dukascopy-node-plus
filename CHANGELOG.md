@@ -2,6 +2,86 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.46.4](https://github.com/Leo4815162342/dukascopy-node/compare/v1.46.3...v1.46.4) (2026-03-09)
+
+
+### Bug Fixes
+
+* flaky tests ([#237](https://github.com/Leo4815162342/dukascopy-node/issues/237)) ([1a60804](https://github.com/Leo4815162342/dukascopy-node/commit/1a6080409b04b9095877dcab06e4e8e8961ab2f0))
+* replace node-fetch@2 with native fetch API (fixes Node 22 ESM crash) ([#235](https://github.com/Leo4815162342/dukascopy-node/issues/235)) ([90efc9c](https://github.com/Leo4815162342/dukascopy-node/commit/90efc9ca1f47301eb7adeb8720bb73efd55b76a9))
+* start dates ([#238](https://github.com/Leo4815162342/dukascopy-node/issues/238)) ([e682228](https://github.com/Leo4815162342/dukascopy-node/commit/e6822288de961aff9c17fb3bb9522d9a946c5e19))
+
+### [1.46.3](https://github.com/Leo4815162342/dukascopy-node/compare/v1.46.2...v1.46.3) (2025-12-20)
+
+### [1.46.2](https://github.com/Leo4815162342/dukascopy-node/compare/v1.46.1...v1.46.2) (2025-12-20)
+
+### [1.46.1](https://github.com/Leo4815162342/dukascopy-node/compare/v1.46.0...v1.46.1) (2025-12-20)
+
+## [1.46.0](https://github.com/Leo4815162342/dukascopy-node/compare/v1.45.1...v1.46.0) (2025-12-20)
+
+
+### Features
+
+* expose instrumentMetaData ([#227](https://github.com/Leo4815162342/dukascopy-node/issues/227)) ([bf31e6a](https://github.com/Leo4815162342/dukascopy-node/commit/bf31e6a620c88c6377a8f18bd74a91a482d03d8e))
+
+### [1.45.1](https://github.com/Leo4815162342/dukascopy-node/compare/v1.45.0...v1.45.1) (2025-11-10)
+
+
+### Bug Fixes
+
+* Replace colons in filename timestamps for Windows/macOS compatibility ([#221](https://github.com/Leo4815162342/dukascopy-node/issues/221)) ([e6ba612](https://github.com/Leo4815162342/dukascopy-node/commit/e6ba612f0215062e80969bfa5beb5cf451dfd3cd))
+
+## [1.45.0](https://github.com/Leo4815162342/dukascopy-node/compare/v1.44.0...v1.45.0) (2025-10-23)
+
+
+### Features
+
+* real time rates ([#219](https://github.com/Leo4815162342/dukascopy-node/issues/219)) ([de35121](https://github.com/Leo4815162342/dukascopy-node/commit/de35121b7756236910a495dc82c55d65eb978b15))
+
+## [1.44.0](https://github.com/Leo4815162342/dukascopy-node/compare/v1.43.0...v1.44.0) (2025-10-22)
+
+
+### Features
+
+* deps update, cleanup, ktlo ([#216](https://github.com/Leo4815162342/dukascopy-node/issues/216)) ([916e017](https://github.com/Leo4815162342/dukascopy-node/commit/916e017fc002f3be97c0d72781d12835d305c7fd))
+
+## [1.43.0](https://github.com/Leo4815162342/dukascopy-node/compare/v1.42.1...v1.43.0) (2025-06-16)
+
+
+### Features
+
+* new instruments jun 2025 ([#212](https://github.com/Leo4815162342/dukascopy-node/issues/212)) ([edd54c8](https://github.com/Leo4815162342/dukascopy-node/commit/edd54c820584ea1360d60f6ab7862e03d4275bdb))
+
+### [1.42.1](https://github.com/Leo4815162342/dukascopy-node/compare/v1.42.0...v1.42.1) (2025-03-02)
+
+
+### Bug Fixes
+
+* start dates for some intstruments ([#206](https://github.com/Leo4815162342/dukascopy-node/issues/206)) ([c745c78](https://github.com/Leo4815162342/dukascopy-node/commit/c745c7849c628e40cbce6366eedb74939fd2c679))
+
+## [1.42.0](https://github.com/Leo4815162342/dukascopy-node/compare/v1.41.0...v1.42.0) (2025-01-12)
+
+
+### Features
+
+* new instruments jan 2025 ([#203](https://github.com/Leo4815162342/dukascopy-node/issues/203)) ([251ad85](https://github.com/Leo4815162342/dukascopy-node/commit/251ad85df215c5085532bd420eee955cca184f88))
+
+## [1.41.0](https://github.com/Leo4815162342/dukascopy-node/compare/v1.40.0...v1.41.0) (2024-11-28)
+
+
+### Features
+
+* new instruments Nov 2024 ([#199](https://github.com/Leo4815162342/dukascopy-node/issues/199)) ([44d7ca4](https://github.com/Leo4815162342/dukascopy-node/commit/44d7ca42e59747e76fdd75fe5608211bc0e090ab))
+
+## [1.40.0](https://github.com/Leo4815162342/dukascopy-node/compare/v1.39.3...v1.40.0) (2024-08-08)
+
+
+### Features
+
+* more sensible error codes ([#189](https://github.com/Leo4815162342/dukascopy-node/issues/189)) ([d0fe496](https://github.com/Leo4815162342/dukascopy-node/commit/d0fe49646609d6a68bc62c1672b44fff7bef3957))
+
+### [1.39.3](https://github.com/Leo4815162342/dukascopy-node/compare/v1.39.2...v1.39.3) (2024-07-06)
+
 ### [1.39.2](https://github.com/Leo4815162342/dukascopy-node/compare/v1.39.1...v1.39.2) (2024-06-19)
 
 
