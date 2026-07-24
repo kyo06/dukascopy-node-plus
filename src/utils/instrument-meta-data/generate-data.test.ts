@@ -147,6 +147,24 @@ describe('Instrument metadata generation with downloaded responses', () => {
     expect(fetchMock).toHaveBeenCalledTimes(3);
   });
 
+  it('honors the Retry-After header on a rate-limited response', async () => {
+    vi.useFakeTimers();
+    const fetchMock = vi
+      .fn()
+      .mockResolvedValueOnce(new Response('', { status: 429, headers: { 'retry-after': '2' } }))
+      .mockResolvedValueOnce(
+        new Response(bulkFixtureBody, { headers: { 'Content-Type': 'application/json' } })
+      );
+    vi.stubGlobal('fetch', fetchMock);
+
+    const resultPromise = fetchJsonWithRetry<InstrumentsResponse>(`${DATA_API_ROOT}/instruments`);
+    await vi.advanceTimersByTimeAsync(2000);
+    const result = await resultPromise;
+
+    expect(result.instruments).toHaveLength(1499);
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+  });
+
   it('does not retry permanent metadata failures', async () => {
     const fetchMock = vi.fn().mockResolvedValue(new Response('', { status: 404 }));
     vi.stubGlobal('fetch', fetchMock);

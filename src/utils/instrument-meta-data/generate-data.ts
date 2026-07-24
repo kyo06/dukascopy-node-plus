@@ -12,16 +12,37 @@ import { ApiInstrumentDetail, InstrumentsResponse } from './generate-data.types'
 
 const saveFile = promisify(fs.writeFile);
 const OUTPUT_FOLDER = path.resolve(__dirname, 'generated');
-const DETAIL_REQUEST_PAUSE_MS = 100;
-const RETRY_DELAYS_MS = [1000, 2000, 4000];
+const DETAIL_REQUEST_PAUSE_MS = 250;
+const RETRY_DELAYS_MS = [1000, 2000, 4000, 8000, 16000];
+const MAX_RETRY_AFTER_MS = 30_000;
 
 class ApiRequestError extends Error {
   retryable: boolean;
+  retryAfterMs: number | null;
 
-  constructor(message: string, retryable: boolean) {
+  constructor(message: string, retryable: boolean, retryAfterMs: number | null = null) {
     super(message);
     this.retryable = retryable;
+    this.retryAfterMs = retryAfterMs;
   }
+}
+
+function parseRetryAfterMs(response: Response): number | null {
+  const header = response.headers.get('retry-after');
+
+  if (!header) {
+    return null;
+  }
+
+  const seconds = Number(header);
+
+  if (Number.isFinite(seconds)) {
+    return Math.min(seconds * 1000, MAX_RETRY_AFTER_MS);
+  }
+
+  const dateMs = Date.parse(header);
+
+  return Number.isFinite(dateMs) ? Math.min(Math.max(dateMs - Date.now(), 0), MAX_RETRY_AFTER_MS) : null;
 }
 
 async function fetchJsonWithRetry<T>(url: string): Promise<T> {
@@ -36,7 +57,8 @@ async function fetchJsonWithRetry<T>(url: string): Promise<T> {
           response.status === 408 || response.status === 429 || response.status >= 500;
         throw new ApiRequestError(
           `Request failed with status ${response.status}: ${url}`,
-          isTransient
+          isTransient,
+          response.status === 429 ? parseRetryAfterMs(response) : null
         );
       }
 
@@ -49,7 +71,11 @@ async function fetchJsonWithRetry<T>(url: string): Promise<T> {
       }
 
       if (attempt < RETRY_DELAYS_MS.length) {
-        await wait(RETRY_DELAYS_MS[attempt]);
+        const delayMs =
+          error instanceof ApiRequestError && error.retryAfterMs !== null
+            ? error.retryAfterMs
+            : RETRY_DELAYS_MS[attempt];
+        await wait(delayMs);
       }
     }
   }

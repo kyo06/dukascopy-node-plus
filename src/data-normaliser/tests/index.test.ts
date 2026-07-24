@@ -89,6 +89,29 @@ describe('Data normaliser with downloaded API responses', () => {
     ).toEqual([]);
   });
 
+  it('decodes a multiplier expressed in scientific notation without throwing', () => {
+    const scientificFixture: TickResponse = {
+      timestamp: 1000,
+      multiplier: 1e-7,
+      times: [0],
+      ask: 0.00001,
+      bid: 0.000009,
+      asks: [0],
+      bids: [0],
+      askVolumes: [0],
+      bidVolumes: [0]
+    };
+
+    const rows = normalise({
+      data: scientificFixture,
+      timeframe: 'tick',
+      volumes: true,
+      volumeUnits: 'units'
+    });
+
+    expect(rows).toEqual([[1000, 0.00001, 0.000009, 0, 0]]);
+  });
+
   it('rejects a downloaded response when one column is corrupted', () => {
     const corruptedFixture: TickResponse = {
       ...tickFixture,
