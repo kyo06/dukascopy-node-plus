@@ -9,10 +9,10 @@
 
 ## Synchronisée automatiquement (ne pas éditer à la main — voir sync_memory_bank.py)
 <!-- SYNC:START -->
-- **Spec active :** v001
-- **Statut :** completed
-- **Avancement :** 3 / 3 tâches terminées (100%)
-- **Prochaine étape :** aucune — version close ; réévaluer via v002 uniquement si un bénéfice concret du moteur JSON upstream est identifié plus tard.
+- **Spec active :** v002
+- **Statut :** in-progress
+- **Avancement :** 5 / 7 tâches terminées (71%)
+- **Prochaine étape :** confirmer avec le mainteneur le merge de `feat/json-api-engine` → `master` (T-002-006) et si `gen:meta` doit être relancé (T-002-007).
 - **Dernière synchro :** 2026-07-24
 <!-- SYNC:END -->
 

@@ -8,7 +8,7 @@
 <!-- SYNC:START -->
 | Spec | Statut | Avancement | Dernière synchro |
 |---|---|---|---|
-| v001 | completed | 3 / 3 tâches terminées (100%) | 2026-07-24 |
+| v002 | in-progress | 5 / 7 tâches terminées (71%) | 2026-07-24 |
 <!-- SYNC:END -->
 
 ## Ce qui fonctionne

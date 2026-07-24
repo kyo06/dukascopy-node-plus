@@ -40,16 +40,17 @@ Release (`npm run release`) runs `standard-version`, pushes tags, builds, and pu
 Data flows through a fixed module pipeline (see `src/processor/index.ts`, the orchestrator called by both `getHistoricalRates` and `getHistoricalRatesToStream`):
 
 ```
-config-validator → url-generator → buffer-fetcher (+ cache-manager) → decompressor → data-normaliser → aggregator → output-formatter
+config-validator → url-generator → buffer-fetcher (+ cache-manager) → data-normaliser → aggregator → output-formatter
 ```
 
+Since the v1.2.6 engine migration (adopted from upstream `dukascopy-node`, commit `a567c90`), Dukascopy is queried via a JSON API instead of raw `.bi5` binary files — there is no decompression step anymore.
+
 1. **config-validator** — validates/sanitizes user config via `fastest-validator` (`schema.ts`), throws `ConfigValidationError`.
-2. **url-generator** — builds Dukascopy bi5 URLs from instrument/dates/timeframe.
-3. **buffer-fetcher** — HTTP-fetches raw `.bi5` buffers per URL, batches requests, retries; consults **cache-manager** first when caching enabled.
-4. **decompressor** — LZMA-decompresses raw buffers (`lzma-purejs-requirejs`) into raw tick/candle byte structures, parsed with `python-struct`.
-5. **data-normaliser** — converts decompressed structures into normalised numeric arrays (timestamp, OHLC/price, volume), timezone/UTC-offset aware (`dates-normaliser`).
-6. **aggregator** — aggregates normalised data from the source timeframe (fetched at) up to the requested timeframe (e.g. tick → m1 → h1), handles `ignoreFlats`.
-7. **output-formatter** — converts internal numeric-array representation (`number[][]`) into the requested output shape: `json`, `csv`, or `array`, tick vs candle item types.
+2. **url-generator** — builds Dukascopy JSON API URLs from instrument/dates/timeframe.
+3. **buffer-fetcher** — HTTP-fetches raw JSON response buffers per URL (native `fetch`), batches requests, retries; consults **cache-manager** first when caching enabled.
+4. **data-normaliser** — parses the JSON response (`JSON.parse` in `processor/index.ts`) and converts it into normalised numeric arrays (timestamp, OHLC/price, volume), timezone/UTC-offset aware (`dates-normaliser`).
+5. **aggregator** — aggregates normalised data from the source timeframe (fetched at) up to the requested timeframe (e.g. tick → m1 → h1), handles `ignoreFlats`.
+6. **output-formatter** — converts internal numeric-array representation (`number[][]`) into the requested output shape: `json`, `csv`, or `array`, tick vs candle item types.
 
 `getHistoricalRatesToStream` wraps the same pipeline but streams `processData` output progressively per URL/batch instead of collecting everything before returning (see `.kiro/skills/streaming-patterns.md` for stream usage patterns/backpressure handling — that file documents illustrative examples, not verbatim source).
 
@@ -74,8 +75,8 @@ Each module under `src/` is single-responsibility, kebab-case directory, with `i
 
 Ce projet suit une approche *spec-driven* : toute fonctionnalité significative est d'abord spécifiée dans `specs/vXXX/` avant implémentation.
 
-- **Spec active :** v001
-- **Emplacement :** `specs/v001/`
+- **Spec active :** v002
+- **Emplacement :** `specs/v002/`
   - `user-stories.md` — fonctionnalités métier + spécifications techniques
   - `tasks.md` — découpage en tâches actionnables
   - `sprint_status.md` — avancement de l'implémentation (à tenir à jour à chaque session)
@@ -96,6 +97,6 @@ Ce projet utilise un memory-bank (`memory-bank/`) pour persister le contexte ent
 
 En fin de session (ou après toute mise à jour de tâche/spec), synchroniser le memory-bank :
 ```
-python3 <chemin-skill-spec-driven>/scripts/sync_memory_bank.py --root <racine-projet> --spec-dir specs/v001
+python3 <chemin-skill-spec-driven>/scripts/sync_memory_bank.py --root <racine-projet> --spec-dir specs/v002
 ```
 <!-- SPEC-DRIVEN:END -->
