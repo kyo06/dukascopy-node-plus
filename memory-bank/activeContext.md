@@ -10,9 +10,9 @@
 ## Synchronisée automatiquement (ne pas éditer à la main — voir sync_memory_bank.py)
 <!-- SYNC:START -->
 - **Spec active :** v003
-- **Statut :** not-started
-- **Avancement :** 0 / 7 tâches terminées (0%)
-- **Prochaine étape :** prioriser avec le mainteneur quelles US attaquer en premier (aucune n'est bloquante).
+- **Statut :** completed
+- **Avancement :** 7 / 7 tâches terminées (100%) — dont T-003-006 reportée par décision explicite (voir notes)
+- **Prochaine étape :** aucune, spec clôturée. Reconsidérer T-003-006 (migration `standard-version`) si besoin futur.
 - **Dernière synchro :** 2026-07-24
 <!-- SYNC:END -->
 

@@ -8,7 +8,7 @@
 <!-- SYNC:START -->
 | Spec | Statut | Avancement | Dernière synchro |
 |---|---|---|---|
-| v003 | not-started | 0 / 7 tâches terminées (0%) | 2026-07-24 |
+| v003 | completed | 7 / 7 tâches terminées (100%) — dont T-003-006 reportée par décision explicite (voir notes) | 2026-07-24 |
 <!-- SYNC:END -->
 
 ## Ce qui fonctionne

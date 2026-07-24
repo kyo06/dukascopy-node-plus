@@ -14,13 +14,13 @@ Aucune skill projet détectée pertinente pour le contenu de ces tâches.
 
 | ID | Tâche | US liée | Type | Statut | Estimation | Skill(s) recommandée(s) | Assigné |
 |---|---|---|---|---|---|---|---|
-| T-003-001 | Décider avec le mainteneur : rebase interactif de `eeff88b` ou refus documenté | US-001 | tech | todo | S | - | - |
-| T-003-002 | Ajouter note explicative dans `specs/CHANGELOG.md` (renversement v001→v002) | US-002 | doc | todo | XS | - | - |
-| T-003-003 | Ajouter throttle + retry/backoff sur 429 dans `generate-data.ts` | US-003 | tech | todo | M | - | - |
-| T-003-004 | Ajouter test `getPriceScale` pour multiplier en notation scientifique | US-004 | test | todo | XS | - | - |
-| T-003-005 | Auditer/compléter tests retry/rate-limit de `src/buffer-fetcher/` | US-005 | test | todo | S | - | - |
-| T-003-006 | Évaluer remplacement `standard-version` (deprecated) | US-006 | tech | todo | M | - | - |
-| T-003-007 | Évaluer bump `eslint`/`@typescript-eslint` vers versions plus récentes | US-006 | tech | todo | S | - | - |
+| T-003-001 | Décider avec le mainteneur : rebase interactif de `eeff88b` ou refus documenté | US-001 | tech | done | S | - | - |
+| T-003-002 | Ajouter note explicative dans `specs/CHANGELOG.md` (renversement v001→v002) | US-002 | doc | done | XS | - | - |
+| T-003-003 | Ajouter throttle + retry/backoff sur 429 dans `generate-data.ts` | US-003 | tech | done | M | - | - |
+| T-003-004 | Ajouter test `getPriceScale` pour multiplier en notation scientifique | US-004 | test | done | XS | - | - |
+| T-003-005 | Auditer/compléter tests retry/rate-limit de `src/buffer-fetcher/` | US-005 | test | done | S | - | - |
+| T-003-006 | Évaluer remplacement `standard-version` (deprecated) | US-006 | tech | done (reporté) | M | - | - |
+| T-003-007 | Évaluer bump `eslint`/`@typescript-eslint` vers versions plus récentes | US-006 | tech | done | S | - | - |
 
 ## Détail des tâches
 
@@ -29,6 +29,7 @@ Aucune skill projet détectée pertinente pour le contenu de ces tâches.
 - **Fichiers/modules concernés :** historique git (`master` local, pas encore pushé).
 - **Critères de complétion :** décision actée, section 4.5 mise à jour avec le résultat.
 - **Dépend de :** aucune
+- **Résultat :** mainteneur a choisi le rebase interactif (`git rebase -i --rebase-merges`). `eeff88b` (227 fichiers) séparé en deux commits atomiques : `feat: adopt upstream JSON API engine` (194 fichiers moteur) et `chore: scaffold spec-driven skill and initial CLAUDE.md/specs` (33 fichiers infra). Historique local rejoué sans conflit, suite complète (`lint`/`type-check`/`test`/`build`) revalidée après coup.
 
 ### T-003-002 — Traçabilité changelog v001→v002
 - **Description :** Ajouter une ligne dans `specs/CHANGELOG.md` sous l'entrée v002 précisant que le mainteneur est revenu explicitement sur la conclusion de v001, sans nouvelle analyse de bénéfice technique.
@@ -59,6 +60,7 @@ Aucune skill projet détectée pertinente pour le contenu de ces tâches.
 - **Fichiers/modules concernés :** `package.json` (script `release`), CI éventuelle.
 - **Critères de complétion :** décision consignée (migrer / reporter / ne pas migrer) avec justification.
 - **Dépend de :** aucune
+- **Résultat :** reporté. `standard-version` reste fonctionnel malgré le statut deprecated ; migration vers `release-please`/`changesets` non urgente, effort non justifié dans ce sprint. À reconsidérer si un incident de release survient.
 
 ### T-003-007 — Évaluation bump `eslint`/`@typescript-eslint`
 - **Description :** Vérifier compatibilité d'un bump vers `eslint@10.x` et/ou une version plus récente de `@typescript-eslint` ; tester en isolation (`bun run lint`) avant toute adoption.
