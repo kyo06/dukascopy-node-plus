@@ -214,13 +214,13 @@ it('should generate correct URL structure', () => {
 
 ```bash
 # Tests avec couverture
-npm run coverage
+bun run coverage
 
 # Tests en mode watch (développement)
-npm run test -- --watch
+bun run test -- --watch
 
 # Tests d'un fichier spécifique
-npm run test -- buffer-fetcher.test.ts
+bun run test -- buffer-fetcher.test.ts
 ```
 
 ## Données de Test

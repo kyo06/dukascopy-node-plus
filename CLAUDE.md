@@ -34,7 +34,7 @@ CLI (after build, or via `tsx`/`npx`):
 npx dukascopy-node -i btcusd -from 2019-01-13 -to 2019-01-14 -t tick -f csv
 ```
 
-Release (`npm run release`) runs `standard-version`, pushes tags, builds, and publishes to npm — don't run unless explicitly asked.
+Release (`bun run release`) runs `standard-version`, pushes tags, builds, and publishes to npm via `bun publish` — don't run unless explicitly asked.
 
 ## Architecture
 

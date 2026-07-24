@@ -14,13 +14,13 @@ Le projet utilise Prettier et ESLint pour maintenir un style cohérent.
 
 ```bash
 # Formater le code
-npm run format
+bun run format
 
 # Vérifier le linting
-npm run lint
+bun run lint
 
 # Vérifier les types
-npm run type-check
+bun run type-check
 ```
 
 ## Règles Prettier

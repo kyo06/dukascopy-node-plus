@@ -9,7 +9,7 @@ inclusion: auto
 ## Build System & Tools
 
 - **Build Tool**: tsup (TypeScript bundler)
-- **Package Manager**: npm, pnpm, or yarn supported
+- **Package Manager**: bun only (`bun.lock` is the source of truth)
 - **TypeScript**: v5.9.3 with strict mode enabled
 - **Test Framework**: Vitest v3.2.4
 - **Node Version**: >=18 required
@@ -38,24 +38,24 @@ inclusion: auto
 
 ```bash
 # Build the project
-npm run build
+bun run build
 
 # Run tests
-npm run test
+bun run test
 
 # Run tests with coverage
-npm run coverage
+bun run coverage
 
 # Format code
-npm run format
+bun run format
 
 # Lint code
-npm run lint
+bun run lint
 
 # Type check
-npm run type-check
+bun run type-check
 
-# CLI usage
+# CLI usage (for consumers of the published package)
 npx dukascopy-node -i btcusd -from 2019-01-13 -to 2019-01-14 -t tick -f csv
 ```
 
