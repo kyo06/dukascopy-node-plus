@@ -78,8 +78,8 @@ Each module under `src/` is single-responsibility, kebab-case directory, with `i
 
 Ce projet suit une approche *spec-driven* : toute fonctionnalité significative est d'abord spécifiée dans `specs/vXXX/` avant implémentation.
 
-- **Spec active :** v002
-- **Emplacement :** `specs/v002/`
+- **Spec active :** v003
+- **Emplacement :** `specs/v003/`
   - `user-stories.md` — fonctionnalités métier + spécifications techniques
   - `tasks.md` — découpage en tâches actionnables
   - `sprint_status.md` — avancement de l'implémentation (à tenir à jour à chaque session)
@@ -100,6 +100,6 @@ Ce projet utilise un memory-bank (`memory-bank/`) pour persister le contexte ent
 
 En fin de session (ou après toute mise à jour de tâche/spec), synchroniser le memory-bank :
 ```
-python3 <chemin-skill-spec-driven>/scripts/sync_memory_bank.py --root <racine-projet> --spec-dir specs/v002
+python3 <chemin-skill-spec-driven>/scripts/sync_memory_bank.py --root <racine-projet> --spec-dir specs/v003
 ```
 <!-- SPEC-DRIVEN:END -->

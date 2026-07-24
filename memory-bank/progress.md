@@ -8,7 +8,7 @@
 <!-- SYNC:START -->
 | Spec | Statut | Avancement | Dernière synchro |
 |---|---|---|---|
-| v002 | completed | 7 / 8 tâches terminées (88%) — T-002-007 bloquée (rate-limit API Dukascopy, hors contrôle du repo) | 2026-07-24 |
+| v003 | not-started | 0 / 7 tâches terminées (0%) | 2026-07-24 |
 <!-- SYNC:END -->
 
 ## Ce qui fonctionne

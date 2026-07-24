@@ -9,10 +9,10 @@
 
 ## Synchronisée automatiquement (ne pas éditer à la main — voir sync_memory_bank.py)
 <!-- SYNC:START -->
-- **Spec active :** v002
-- **Statut :** completed
-- **Avancement :** 7 / 8 tâches terminées (88%) — T-002-007 bloquée (rate-limit API Dukascopy, hors contrôle du repo)
-- **Prochaine étape :** relancer `bun run gen:meta` plus tard (hors session, throttling nécessaire) ; sinon spec close.
+- **Spec active :** v003
+- **Statut :** not-started
+- **Avancement :** 0 / 7 tâches terminées (0%)
+- **Prochaine étape :** prioriser avec le mainteneur quelles US attaquer en premier (aucune n'est bloquante).
 - **Dernière synchro :** 2026-07-24
 <!-- SYNC:END -->
 
