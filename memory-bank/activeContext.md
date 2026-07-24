@@ -10,9 +10,9 @@
 ## Synchronisée automatiquement (ne pas éditer à la main — voir sync_memory_bank.py)
 <!-- SYNC:START -->
 - **Spec active :** v002
-- **Statut :** in-progress
-- **Avancement :** 5 / 7 tâches terminées (71%)
-- **Prochaine étape :** confirmer avec le mainteneur le merge de `feat/json-api-engine` → `master` (T-002-006) et si `gen:meta` doit être relancé (T-002-007).
+- **Statut :** completed
+- **Avancement :** 7 / 8 tâches terminées (88%) — T-002-007 bloquée (rate-limit API Dukascopy, hors contrôle du repo)
+- **Prochaine étape :** relancer `bun run gen:meta` plus tard (hors session, throttling nécessaire) ; sinon spec close.
 - **Dernière synchro :** 2026-07-24
 <!-- SYNC:END -->
 

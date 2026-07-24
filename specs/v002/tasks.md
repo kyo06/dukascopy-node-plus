@@ -19,8 +19,9 @@ Aucune skill projet détectée pertinente.
 | T-002-003 | Vérifier `getHistoricalRatesToStream` et exports `instrumentMetaData`/`InstrumentMetaData` intacts | US-002 | test | done | S | - | - |
 | T-002-004 | Installer dépendances (`npm install --legacy-peer-deps`), passer `type-check` et `test` au vert | US-003 | test | done | M | - | - |
 | T-002-005 | Mettre à jour `CLAUDE.md` (section Architecture, nouveau pipeline JSON API) | US-001 | doc | done | XS | - | - |
-| T-002-006 | Décider merge `feat/json-api-engine` → `master` | US-001 | tech | todo | XS | - | - |
-| T-002-007 | Confirmer si `gen:meta` doit être relancé (nouvelle snapshot brute) | US-001 | tech | todo | XS | - | - |
+| T-002-006 | Décider merge `feat/json-api-engine` → `master` | US-001 | tech | done | XS | - | - |
+| T-002-007 | Confirmer si `gen:meta` doit être relancé (nouvelle snapshot brute) | US-001 | tech | blocked | XS | - | - |
+| T-002-008 | Standardiser sur `bun` (supprimer `package-lock.json`/`pnpm-lock.yaml`) | US-003 | tech | done | S | - | - |
 
 ## Détail des tâches
 
@@ -60,8 +61,14 @@ Aucune skill projet détectée pertinente.
 - **Critères de complétion :** confirmation explicite du mainteneur obtenue avant tout merge.
 - **Dépend de :** T-002-004
 
-### T-002-007 — Régénération metadata (à confirmer)
-- **Description :** Vérifier si `npm run gen:meta` doit être relancé vu la nouvelle snapshot `raw-meta-data-2026-07-13.json` livrée par le cherry-pick.
+### T-002-007 — Régénération metadata (bloquée)
+- **Description :** Tentative de `bun run gen:meta` — échoue avec `ApiRequestError: 429` sur `jetta.dukascopy.com` (rate-limit, 1499 requêtes instrument par instrument). Pas de retry en boucle (éviter de matraquer l'API Dukascopy).
 - **Fichiers/modules concernés :** `src/config/instruments-metadata.ts`, `src/utils/instrument-meta-data/generated/`.
-- **Critères de complétion :** décision du mainteneur consignée.
+- **Critères de complétion :** à relancer plus tard, hors session (throttling/pause entre requêtes ou nouvelle tentative différée).
 - **Dépend de :** T-002-001
+
+### T-002-008 — Standardisation sur bun
+- **Description :** Suppression de `package-lock.json`/`pnpm-lock.yaml`, `bun install` régénère `bun.lock`, `packageManager` pinné `bun@1.3.14`, scripts `release`/`release:beta` et `CLAUDE.md` passés de `npm`/`pnpm` à `bun`.
+- **Fichiers/modules concernés :** `package.json`, `bun.lock`, `CLAUDE.md`.
+- **Critères de complétion :** `bun run test` (132/132) et `bun run type-check` verts après le switch.
+- **Dépend de :** T-002-004

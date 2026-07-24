@@ -5,10 +5,10 @@
 
 ## Résumé
 
-- **Statut global de la spec :** in-progress
-- **Avancement :** 5 / 7 tâches terminées (71%)
+- **Statut global de la spec :** completed
+- **Avancement :** 7 / 8 tâches terminées (88%) — T-002-007 bloquée (rate-limit API Dukascopy, hors contrôle du repo)
 - **Dernière session :** 2026-07-24
-- **Prochaine étape :** confirmer avec le mainteneur le merge de `feat/json-api-engine` → `master` (T-002-006) et si `gen:meta` doit être relancé (T-002-007).
+- **Prochaine étape :** relancer `bun run gen:meta` plus tard (hors session, throttling nécessaire) ; sinon spec close.
 
 ## Avancement par fonctionnalité (US)
 
@@ -26,8 +26,10 @@
 - `T-002-003` → **done** — streaming API et instrument-metadata API confirmés non cassés
 - `T-002-004` → **done** — `npm install --legacy-peer-deps`, type-check clean, 132/132 tests verts (`lint` échoue pour gap pré-existant `eslint`, non lié à cette session)
 - `T-002-005` → **done** — `CLAUDE.md` section Architecture mise à jour (pipeline JSON API, suppression mention decompressor/LZMA)
-- `T-002-006`, `T-002-007` → **todo** — décisions à prendre avec le mainteneur (merge, régénération metadata)
-- Décision : travail isolé sur branche dédiée, aucun push, aucun merge vers `master`.
+- `T-002-006` → **done** — merge `feat/json-api-engine` → `master` (`--no-ff`), 132/132 tests verts après merge
+- `T-002-007` → **blocked** — `gen:meta` échoue (429 rate-limit Dukascopy), à relancer hors session
+- `T-002-008` → **done** — passage à `bun` : suppression `package-lock.json`/`pnpm-lock.yaml`, `packageManager` pinné, scripts release + `CLAUDE.md` mis à jour
+- Décision : merge fait sur `master`, toujours aucun `git push` vers un remote.
 
 ## Blocages actifs
 _Aucun blocage actif._ Deux décisions en attente (merge, gen:meta) — voir Prochaine étape.
