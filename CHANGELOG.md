@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/kyo06/dukascopy-node-plus/compare/v1.2.5...v1.3.0) (2026-07-24)
+
+
+### Features
+
+* adopt upstream JSON API engine (cherry-pick a567c90) ([1bea1b6](https://github.com/kyo06/dukascopy-node-plus/commit/1bea1b6cd9ad9ff5b4ea03777d339e0625a658af))
+
+
+### Bug Fixes
+
+* add missing eslint devDependency, bump tsup to drop peer conflict ([53a51cf](https://github.com/kyo06/dukascopy-node-plus/commit/53a51cf13de5900005bbbf1d2ae538df00b80dac))
+* bump eslint/typescript-eslint, robustify gen:meta retry, add test coverage ([2631761](https://github.com/kyo06/dukascopy-node-plus/commit/26317618af7605644a62af7f3ba47480bbbed96d))
+
 ### [1.2.5](https://github.com/kyo06/dukascopy-node-plus/compare/v1.2.4...v1.2.5) (2026-03-15)
 
 ### [1.2.4](https://github.com/kyo06/dukascopy-node-plus/compare/v1.2.3...v1.2.4) (2026-03-15)
