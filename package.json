@@ -21,9 +21,10 @@
         "type-check": "tsc --noEmit --skipLibCheck",
         "gen:meta": "tsx src/utils/instrument-meta-data/generate-data.ts",
         "gen:instruments-md": "tsx src/utils/instrument-meta-data/generate-instrument-md.ts",
-        "release": "standard-version && git push --follow-tags origin master && pnpm build && npm publish",
-        "release:beta": "pnpm build && npm publish --tag beta"
+        "release": "standard-version && git push --follow-tags origin master && bun run build && npm publish",
+        "release:beta": "bun run build && npm publish --tag beta"
     },
+    "packageManager": "bun@1.3.14",
     "author": {
         "name": "Dr. Mohammed REZGUI"
     },

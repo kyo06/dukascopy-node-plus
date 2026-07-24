@@ -13,17 +13,20 @@ Three public entry points:
 
 ## Commands
 
+Package manager: **bun** (`bun.lock` is the source of truth; `npm`/`pnpm` lockfiles removed).
+
 ```bash
-npm run build         # rm -rf dist && tsup build (esm+cjs+dts, legacy output)
-npm run test           # vitest run
-npm run test -- <pattern>       # run a single test file, e.g. npm run test -- buffer-fetcher.test.ts
-npm run test -- --watch         # watch mode
-npm run coverage       # vitest run --coverage
-npm run lint            # eslint ./src --ext ts --ext js
-npm run format          # prettier --write src/**/*.ts
-npm run type-check      # tsc --noEmit --skipLibCheck
-npm run gen:meta         # regenerate src/config/instruments-metadata.ts
-npm run gen:instruments-md  # regenerate instrument docs table
+bun install            # install dependencies
+bun run build          # rm -rf dist && tsup build (esm+cjs+dts, legacy output)
+bun run test            # vitest run
+bun run test -- <pattern>       # run a single test file, e.g. bun run test -- buffer-fetcher.test.ts
+bun run test -- --watch         # watch mode
+bun run coverage        # vitest run --coverage
+bun run lint             # eslint ./src --ext ts --ext js
+bun run format           # prettier --write src/**/*.ts
+bun run type-check       # tsc --noEmit --skipLibCheck
+bun run gen:meta         # regenerate src/config/instruments-metadata.ts (hits live Dukascopy API, can 429)
+bun run gen:instruments-md  # regenerate instrument docs table
 ```
 
 CLI (after build, or via `tsx`/`npx`):
